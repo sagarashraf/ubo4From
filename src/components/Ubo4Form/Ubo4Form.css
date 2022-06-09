@@ -1,0 +1,254 @@
+::-webkit-calendar-picker-indicator {
+	margin-left: -25px !important;
+}
+.grid-column-spacing {
+	padding: 0% !important;
+}
+.grid-column-pl {
+	padding-left: 0% !important;
+}
+.grid-column-pr {
+	padding-right: 0% !important;
+}
+.table-bottom-margin {
+	margin-bottom: 0% !important;
+}
+.Row1Col3R4C1 {
+	width: 60% !important;
+}
+.Row1Col3R4C2 {
+	width: 25% !important;
+}
+.Row1Col3R4C3 {
+	width: 15% !important;
+}
+.input-field-general {
+	width: 100%;
+	border: none !important;
+	outline: none !important;
+	background: transparent !important;
+}
+.Row1Col3bR3C1 {
+	width: 60% !important;
+}
+
+.Row1Col3bR3C2 {
+	width: 15% !important;
+}
+.Row1Col3bR4C1 {
+	width: 15% !important;
+}
+.Row1Col6cR1C1 {
+	width: 20% !important;
+	font-weight: bold !important;
+}
+.Row1Col6cR1C3 {
+	width: 16% !important;
+}
+.from-through-columns {
+	padding: 0% !important;
+	font-size: 11.5px !important;
+	text-align: center !important;
+	font-weight: bolder;
+}
+.Row2Col5R1C1 {
+	width: 30%;
+}
+.Row2Col5R1C2 {
+	width: 5%;
+}
+.Row2Col5R2C1 {
+	width: 5%;
+}
+.Row2Col7R1C1 {
+	width: 20%;
+}
+.Row2Col7R1C2 {
+	width: 5%;
+}
+.Row2Col7R2C1 {
+	width: 5%;
+}
+.Row2Col7R2C2 {
+	width: 30%;
+}
+.Row2Col7R2C3 {
+	width: 5%;
+}
+
+.Row2Col7R2C4 {
+	width: 10%;
+}
+.Row2Col7R2C5 {
+	width: 5%;
+}
+
+.Row2Col7R2C6 {
+	width: 15%;
+}
+.Row2Col7R2C7 {
+	width: 5%;
+}
+
+.Row2Col7R2C8 {
+	width: 15%;
+}
+.Row3Col2R1C1 {
+	width: 60%;
+}
+
+.Admission-tag {
+	position: relative;
+	margin-bottom: -18px !important;
+	left: 100%;
+	font-size: 11px;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+.Admission-attributes {
+	font-size: 11px;
+	padding-top: 10px !important;
+	font-weight: bolder !important;
+	text-align: center !important;
+}
+.DHR16 {
+	width: 15%;
+	font-size: 11px;
+	font-weight: bolder !important;
+	padding-top: 10px !important;
+}
+.STAT17 {
+	width: 15%;
+	font-size: 11px;
+	font-weight: bolder !important;
+	padding-top: 10px !important;
+}
+.condition-tag {
+	position: relative;
+	margin-bottom: -18px !important;
+	left: 263%;
+	font-size: 11px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	width: max-content;
+}
+.condition-attributes {
+	font-size: 11px;
+	padding-top: 10px !important;
+	font-weight: bolder !important;
+	text-align: center !important;
+	width: 10%;
+}
+
+.condition-attributes-1 {
+	width: max-content;
+	font-size: 11px;
+	padding-top: 10px !important;
+	font-weight: bolder !important;
+	text-align: center !important;
+	justify-content: center;
+}
+.ACDTSTATE {
+	width: 42%;
+	padding-top: 15px !important;
+}
+.condition-codes {
+	padding: 0% !important;
+	font-size: 11.5px !important;
+	text-align: center !important;
+	font-weight: bolder;
+}
+.condition-codes-label {
+	margin-bottom: -14px !important;
+}
+
+.Admission-label {
+	margin-bottom: -14px !important;
+}
+.Admission {
+	padding: 0% !important;
+	font-size: 11.5px !important;
+	text-align: center !important;
+	font-weight: bolder;
+	width: 72%;
+}
+.font-style {
+	font-size: 13px !important;
+}
+.font-style-state {
+	font-size: 10px !important;
+	padding-top: 15px !important;
+	font-weight: 700;
+}
+.padding-right {
+	padding-right: 0% !important;
+}
+.main-table-3nd-column {
+	width: 20%;
+}
+.main-table-4nd-column {
+	width: 15%;
+}
+.main-table-8nd-column {
+	width: 15%;
+}
+.main-table-7nd-column {
+	width: 12%;
+}
+thead th {
+	border-bottom: 2px solid #d3e6f5 !important;
+}
+.letter-spacing-pageof {
+	letter-spacing: 4px;
+	font-size: 18px;
+}
+.PayerName {
+	width: 42%;
+}
+.HealthPlan {
+	width: 42%;
+}
+.PriorPay {
+	width: 25%;
+}
+.EstAmount {
+	width: 25%;
+}
+.nextNpi {
+	width: 25%;
+}
+.insuredName {
+	width: 45%;
+}
+.insuredId {
+	width: 45%;
+}
+.DX66 {
+	width: 5%;
+}
+.Admit-dx {
+	width: 15%;
+}
+.ReasonDx {
+	width: 17%;
+}
+.PpsCode {
+	width: 10%;
+}
+.Eci {
+	width: 12%;
+}
+.CC81Next {
+	width: 15%;
+}
+.Atendings {
+	width: 23%;
+	font-size: 12px;
+}
+.Qual {
+	width: 10%;
+	font-size: 12px;
+}
+.QualNext {
+	width: 10%;
+}

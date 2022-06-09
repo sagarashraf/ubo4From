@@ -1,0 +1,81 @@
+.labels-design {
+	font-size: 14px !important;
+	font-weight: bold;
+	color: aqua !important;
+	text-align: center !important;
+}
+.tag-6 {
+	font-weight: 700 !important;
+	margin-bottom: 0% !important;
+}
+.tag-6-from-through {
+	font-size: 11px;
+	margin-bottom: 0% !important;
+	display: flex;
+	font-weight: 700 !important;
+	justify-content: space-around;
+}
+.form-control:disabled,
+.form-control[readonly] {
+	padding-right: 0px;
+	background-color: #45b08c !important;
+	color: black !important;
+	padding-left: 0px;
+	height: 100%;
+	font-weight: 700 !important;
+}
+.tax-No-5 {
+	padding-right: 0.35rem !important;
+	padding-left: 0rem !important;
+}
+.tag-7 {
+	padding-left: 0.35rem !important;
+}
+.condition-codes {
+	width: 9.05% !important;
+}
+input[type="date"]:required:invalid::-webkit-datetime-edit {
+	color: transparent;
+}
+input[type="date"]:focus::-webkit-datetime-edit {
+	color: black !important;
+}
+.form-control {
+	border: 1px solid #45b08c !important;
+}
+.label-color {
+	background-color: #45b08c !important;
+	border-radius: 5px !important;
+}
+.label-color-simple {
+	background-color: #45b08c !important;
+	border-radius: 5px !important;
+	padding: 8px 5px;
+	height: 100%;
+	text-align: center !important;
+	font-weight: bolder;
+}
+.main-table-design {
+	font-size: 10px !important;
+	text-align: center !important;
+	font-weight: 700;
+}
+.custom-width {
+	width: 16% !important;
+}
+.custom-width-13 {
+	width: 13%;
+}
+.custom-width-18 {
+	width: 18% !important;
+}
+.second-general-tables {
+	font-size: 14px !important;
+	text-align: center !important;
+}
+.custom-width-5 {
+	width: 5%;
+}
+.custom-width-10 {
+	width: 15%;
+}
