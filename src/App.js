@@ -15,9 +15,9 @@ export const App = (props) => {
 		<div>
 			<BrowserRouter>
 				<Routes>
-					<Route path='/' element={<Ubo4Form />} />
+					<Route path='/avd' element={<Ubo4Form />} />
 					<Route path='table' element={<TableForm />} />
-					<Route path='grids' element={<Ubo4FormAdvance />} />
+					<Route path='/' element={<Ubo4FormAdvance />} />
 				</Routes>
 			</BrowserRouter>
 		</div>
