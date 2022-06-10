@@ -285,151 +285,147 @@ export const Ubo4FormAdvance = (props) => {
 			<Row className='justify-content-center'>
 				<Row>
 					<Col className='px-2' lg={6}>
-						<Form>
-							<Row className='mb-1'>
-								<Form.Group
-									className='px-1'
-									condition-codes
-									as={Col}
-									md='12'
-									controlId='validationCustom01'>
-									<Form.Control
-										required
-										type='text'
-										placeholder='1'
-										className='mb-2'
-									/>
-									<Form.Control
-										required
-										type='text'
-										placeholder='B'
-										className='mb-2'
-									/>
+						<Row>
+							<Form.Group
+								className='px-1'
+								condition-codes
+								as={Col}
+								md='12'
+								controlId='validationCustom01'>
+								<Form.Control
+									required
+									type='text'
+									placeholder='1'
+									className='mb-2'
+								/>
+								<Form.Control
+									required
+									type='text'
+									placeholder='B'
+									className='mb-2'
+								/>
 
-									<Row className='px-2'>
-										<Form.Group
-											className='mb-2 px-1'
-											as={Col}
-											xs='6'
-											controlId='validationCustom02'>
-											<Form.Control required type='text' placeholder='C' />
-										</Form.Group>
-										<Form.Group
-											className='px-1'
-											as={Col}
-											xs='3'
-											controlId='validationCustom02'>
-											<Form.Control required type='text' placeholder='D' />
-										</Form.Group>
-										<Form.Group
-											className='px-1'
-											as={Col}
-											xs='3'
-											controlId='validationCustom02'>
-											<Form.Control required type='text' placeholder='E' />
-										</Form.Group>
-									</Row>
-									<Row className='px-2'>
-										<Form.Group
-											className='mb-2 px-1'
-											as={Col}
-											xs='5'
-											controlId='validationCustom02'>
-											<Form.Control required type='text' placeholder='F' />
-										</Form.Group>
-										<Form.Group
-											className='px-1'
-											as={Col}
-											xs='4'
-											controlId='validationCustom02'>
-											<Form.Control required type='text' placeholder='G' />
-										</Form.Group>
-										<Form.Group
-											as={Col}
-											className='px-1'
-											xs='3'
-											controlId='validationCustom02'>
-											<Form.Control required type='text' placeholder='H' />
-										</Form.Group>
-									</Row>
-								</Form.Group>
-							</Row>
-						</Form>
+								<Row className='px-2'>
+									<Form.Group
+										className='mb-2 px-1'
+										as={Col}
+										xs='6'
+										controlId='validationCustom02'>
+										<Form.Control required type='text' placeholder='C' />
+									</Form.Group>
+									<Form.Group
+										className='px-1'
+										as={Col}
+										xs='3'
+										controlId='validationCustom02'>
+										<Form.Control required type='text' placeholder='D' />
+									</Form.Group>
+									<Form.Group
+										className='px-1'
+										as={Col}
+										xs='3'
+										controlId='validationCustom02'>
+										<Form.Control required type='text' placeholder='E' />
+									</Form.Group>
+								</Row>
+								<Row className='px-2'>
+									<Form.Group
+										className='mb-2 px-1'
+										as={Col}
+										xs='5'
+										controlId='validationCustom02'>
+										<Form.Control required type='text' placeholder='F' />
+									</Form.Group>
+									<Form.Group
+										className='px-1'
+										as={Col}
+										xs='4'
+										controlId='validationCustom02'>
+										<Form.Control required type='text' placeholder='G' />
+									</Form.Group>
+									<Form.Group
+										as={Col}
+										className='px-1'
+										xs='3'
+										controlId='validationCustom02'>
+										<Form.Control required type='text' placeholder='H' />
+									</Form.Group>
+								</Row>
+							</Form.Group>
+						</Row>
 					</Col>
 					<Col className='px-2' lg={6}>
-						<Form>
-							<Row className='mb-3 '>
-								<Form.Group
-									className='px-1'
-									as={Col}
-									md='12'
-									controlId='validationCustom01'>
-									<Form.Control
-										required
-										type='text'
-										placeholder='2'
-										className='mb-2'
-									/>
-									<Form.Control
-										required
-										type='text'
-										placeholder='B'
-										className='mb-2'
-									/>
+						<Row>
+							<Form.Group
+								className='px-1'
+								as={Col}
+								md='12'
+								controlId='validationCustom01'>
+								<Form.Control
+									required
+									type='text'
+									placeholder='2'
+									className='mb-2'
+								/>
+								<Form.Control
+									required
+									type='text'
+									placeholder='B'
+									className='mb-2'
+								/>
 
-									<Row className='px-2'>
-										<Form.Group
-											className='mb-2 px-1'
-											as={Col}
-											xs='6'
-											controlId='validationCustom02'>
-											<Form.Control required type='text' placeholder='C' />
-										</Form.Group>
-										<Form.Group
-											className='px-1'
-											as={Col}
-											xs='3'
-											controlId='validationCustom02'>
-											<Form.Control required type='text' placeholder='D' />
-										</Form.Group>
-										<Form.Group
-											className='px-1'
-											as={Col}
-											xs='3'
-											controlId='validationCustom02'>
-											<Form.Control required type='text' placeholder='E' />
-										</Form.Group>
-									</Row>
-									<Row className='px-2'>
-										<Form.Group
-											className='mb-2 px-1'
-											as={Col}
-											xs='3'
-											controlId='validationCustom02'>
-											<Form.Control required type='text' placeholder='F' />
-										</Form.Group>
-										<Form.Group
-											className='px-1'
-											as={Col}
-											xs='9'
-											controlId='validationCustom02'>
-											<Form.Control required type='text' placeholder='G' />
-										</Form.Group>
-									</Row>
-								</Form.Group>
-							</Row>
-						</Form>
+								<Row className='px-2'>
+									<Form.Group
+										className='mb-2 px-1'
+										as={Col}
+										xs='6'
+										controlId='validationCustom02'>
+										<Form.Control required type='text' placeholder='C' />
+									</Form.Group>
+									<Form.Group
+										className='px-1'
+										as={Col}
+										xs='3'
+										controlId='validationCustom02'>
+										<Form.Control required type='text' placeholder='D' />
+									</Form.Group>
+									<Form.Group
+										className='px-1'
+										as={Col}
+										xs='3'
+										controlId='validationCustom02'>
+										<Form.Control required type='text' placeholder='E' />
+									</Form.Group>
+								</Row>
+								<Row className='px-2'>
+									<Form.Group
+										className='mb-2 px-1'
+										as={Col}
+										xs='3'
+										controlId='validationCustom02'>
+										<Form.Control required type='text' placeholder='F' />
+									</Form.Group>
+									<Form.Group
+										className='px-1'
+										as={Col}
+										xs='9'
+										controlId='validationCustom02'>
+										<Form.Control required type='text' placeholder='G' />
+									</Form.Group>
+								</Row>
+							</Form.Group>
+						</Row>
 					</Col>
 				</Row>
 				<Row>
-					<Col className='px-2' lg={12} xs={12}>
+					<Col className='px-2 mb-2' lg={12} xs={12}>
 						<Row>
 							<Form.Group
-								className=' px-1 label-color-simple'
+								className=' px-1'
 								as={Col}
 								xs='3'
 								controlId='validationCustom02'>
-								<div>3a PAT. CNTL #</div>
+								<div className=' label-color-simple'>3a PAT. CNTL #</div>
 							</Form.Group>
 
 							<Form.Group
@@ -440,20 +436,20 @@ export const Ubo4FormAdvance = (props) => {
 								<Form.Control required type='text' />
 							</Form.Group>
 							<Form.Group
-								className=' px-1 label-color-simple'
+								className=' px-1 '
 								as={Col}
 								xs='3'
 								controlId='validationCustom02'>
-								<div>4 TYPE OF BILL</div>
+								<div className=' label-color-simple'>4 TYPE OF BILL</div>
 							</Form.Group>
 						</Row>
 						<Row className='mt-1'>
 							<Form.Group
-								className=' px-1 label-color-simple'
+								className=' px-1 '
 								as={Col}
 								xs='3'
 								controlId='validationCustom02'>
-								<div>b. MED .REC . #</div>
+								<div className=' label-color-simple'>b. MED .REC . #</div>
 							</Form.Group>
 
 							<Form.Group
@@ -496,16 +492,18 @@ export const Ubo4FormAdvance = (props) => {
 					<Col className='px-2' xs={6}>
 						<Row className='text-center px-1'>
 							<Form.Group
-								className='px-1 mb-1 label-color'
+								className='px-1 mb-1 '
 								as={Col}
 								xs='12'
 								controlId='validationCustom02'>
-								<p className='tag-6'>6 STATEMENT COVERS PERIOD</p>
+								<div className='label-color'>
+									<p className='tag-6 h6'>6 STATEMENT COVERS PERIOD</p>
 
-								<p className=' tag-6-from-through '>
-									<div>FROM</div>
-									<div>THROUGH</div>
-								</p>
+									<p className=' tag-6-from-through '>
+										<div>FROM</div>
+										<div>THROUGH</div>
+									</p>
+								</div>
 							</Form.Group>
 							<Form.Group
 								className='px-1'
@@ -537,23 +535,23 @@ export const Ubo4FormAdvance = (props) => {
 				</Row>
 				<Row>
 					<Col className='px-2' lg={12} xs={12}>
-						<Row>
+						<Row className='mt-2'>
 							<Col lg={4} md={12} xs={12}>
 								<Row>
 									<Form.Group
-										className=' px-1 label-color-simple'
+										className=' px-1 '
 										as={Col}
 										xs='5'
 										controlId='validationCustom02'>
-										<div>8 PATIENT NAME</div>
+										<div className='label-color-simple'>8 PATIENT NAME</div>
 									</Form.Group>
 
 									<Form.Group
-										className=' px-1 label-color-simple'
+										className=' px-1'
 										as={Col}
 										xs='1'
 										controlId='validationCustom02'>
-										<div>B</div>
+										<div className='label-color-simple'>B</div>
 									</Form.Group>
 									<Form.Group
 										className='mb-2 px-1'
@@ -565,11 +563,11 @@ export const Ubo4FormAdvance = (props) => {
 								</Row>
 								<Row>
 									<Form.Group
-										className=' px-1 label-color-simple'
+										className=' px-1 '
 										as={Col}
 										xs='2'
 										controlId='validationCustom02'>
-										<div>b</div>
+										<div className='label-color-simple'>b</div>
 									</Form.Group>
 									<Form.Group
 										className='mb-2 px-1'
@@ -583,18 +581,18 @@ export const Ubo4FormAdvance = (props) => {
 							<Col lg={8} md={12} xs={12}>
 								<Row>
 									<Form.Group
-										className=' px-1 label-color-simple'
+										className=' px-1 '
 										as={Col}
 										xs='4'
 										controlId='validationCustom02'>
-										<div>9 PATIENT ADDRESS</div>
+										<div className='label-color-simple'>9 PATIENT ADDRESS</div>
 									</Form.Group>
 									<Form.Group
-										className=' px-1 label-color-simple'
+										className=' px-1 '
 										as={Col}
 										xs='1'
 										controlId='validationCustom02'>
-										<div>a.</div>
+										<div className='label-color-simple'>a.</div>
 									</Form.Group>
 
 									<Form.Group
@@ -607,11 +605,11 @@ export const Ubo4FormAdvance = (props) => {
 								</Row>
 								<Row>
 									<Form.Group
-										className=' px-1 label-color-simple'
+										className=' px-1'
 										as={Col}
 										xs='1'
 										controlId='validationCustom02'>
-										<div>B.</div>
+										<div className=' label-color-simple'>B.</div>
 									</Form.Group>
 
 									<Form.Group
@@ -622,11 +620,11 @@ export const Ubo4FormAdvance = (props) => {
 										<Form.Control required type='text' placeholder='' />
 									</Form.Group>
 									<Form.Group
-										className=' px-1 label-color-simple'
+										className=' px-1 '
 										as={Col}
 										xs='1'
 										controlId='validationCustom02'>
-										<div>c.</div>
+										<div className='label-color-simple'>c.</div>
 									</Form.Group>
 									<Form.Group
 										className='mb-2 px-1'
@@ -636,11 +634,11 @@ export const Ubo4FormAdvance = (props) => {
 										<Form.Control required type='text' placeholder='' />
 									</Form.Group>
 									<Form.Group
-										className=' px-1 label-color-simple'
+										className=' px-1 '
 										as={Col}
 										xs='1'
 										controlId='validationCustom02'>
-										<div>d.</div>
+										<div className='label-color-simple'>d.</div>
 									</Form.Group>
 									<Form.Group
 										className='mb-2 px-1'
@@ -650,11 +648,11 @@ export const Ubo4FormAdvance = (props) => {
 										<Form.Control required type='text' placeholder='' />
 									</Form.Group>
 									<Form.Group
-										className=' px-1 label-color-simple'
+										className=' px-1 '
 										as={Col}
 										xs='1'
 										controlId='validationCustom02'>
-										<div>e.</div>
+										<div className='label-color-simple'>e.</div>
 									</Form.Group>
 									<Form.Group
 										className='mb-2 px-1'
@@ -672,19 +670,19 @@ export const Ubo4FormAdvance = (props) => {
 					<Col sm={3} xs={12}>
 						<Row>
 							<Form.Group
-								className=' px-1 mb-1 label-color-simple'
+								className=' px-1 mb-1 '
 								as={Col}
 								xs='6'
 								controlId='validationCustom02'>
-								<div>10 BIRTH DATE</div>
+								<div className='label-color-simple'>10 BIRTH DATE</div>
 							</Form.Group>
 
 							<Form.Group
-								className=' px-1 mb-1 label-color-simple'
+								className=' px-1 mb-1 '
 								as={Col}
 								xs='6'
 								controlId='validationCustom02'>
-								<div>11 SEX</div>
+								<div className='label-color-simple'>11 SEX</div>
 							</Form.Group>
 						</Row>
 						<Row>
@@ -710,18 +708,20 @@ export const Ubo4FormAdvance = (props) => {
 					<Col sm={6} xs={12}>
 						<Row className='text-center px-1'>
 							<Form.Group
-								className='px-1 mb-1 label-color'
+								className='px-1 mb-1 '
 								as={Col}
 								xs='12'
 								controlId='validationCustom02'>
-								<p className='tag-6'>ADMISSION</p>
+								<div className='label-color'>
+									<p className='tag-6'>ADMISSION</p>
 
-								<p className=' tag-6-from-through '>
-									<div>12 DATE.</div>
-									<div>13 HR</div>
-									<div>14 TYPE</div>
-									<div>15 SRC</div>
-								</p>
+									<p className=' tag-6-from-through '>
+										<div>12 DATE.</div>
+										<div>13 HR</div>
+										<div>14 TYPE</div>
+										<div>15 SRC</div>
+									</p>
+								</div>
 							</Form.Group>
 							<Form.Group
 								className='px-1'
@@ -756,18 +756,18 @@ export const Ubo4FormAdvance = (props) => {
 					<Col sm={3} xs={12}>
 						<Row className='text-center'>
 							<Form.Group
-								className=' px-1 mb-1 label-color-simple'
+								className=' px-1 mb-1'
 								as={Col}
 								xs='6'
 								controlId='validationCustom02'>
-								<div>16 DHR</div>
+								<div className='label-color-simple'>16 DHR</div>
 							</Form.Group>
 							<Form.Group
-								className=' px-1 mb-1 label-color-simple'
+								className=' px-1 mb-1 '
 								as={Col}
 								xs='6'
 								controlId='validationCustom02'>
-								<div>17 STAT</div>
+								<div className='label-color-simple'>17 STAT</div>
 							</Form.Group>
 						</Row>
 						<Row>
@@ -793,25 +793,27 @@ export const Ubo4FormAdvance = (props) => {
 					<Col sm={10} xs={12}>
 						<Row className='mb-1 text-center px-1'>
 							<Form.Group
-								className='px-1 label-color mb-1'
+								className='px-1  mb-1'
 								as={Col}
 								xs='12'
 								controlId='validationCustom02'>
-								<p className='tag-6'>CONDITION CODES</p>
+								<div className='label-color'>
+									<p className='tag-6'>CONDITION CODES</p>
 
-								<p className=' tag-6-from-through '>
-									<div>12 DATE.</div>
-									<div>13 HR</div>
-									<div>14 TYPE</div>
-									<div>15 SRC</div>
-									<div>14 TYPE</div>
-									<div>15 SRC</div>
-									<div>14 TYPE</div>
-									<div>15 SRC</div>
-									<div>14 TYPE</div>
-									<div>15 SRC</div>
-									<div>14 TYPE</div>
-								</p>
+									<p className=' tag-6-from-through '>
+										<div>12 DATE.</div>
+										<div>13 HR</div>
+										<div>14 TYPE</div>
+										<div>15 SRC</div>
+										<div>14 TYPE</div>
+										<div>15 SRC</div>
+										<div>14 TYPE</div>
+										<div>15 SRC</div>
+										<div>14 TYPE</div>
+										<div>15 SRC</div>
+										<div>14 TYPE</div>
+									</p>
+								</div>
 							</Form.Group>
 							<Form.Group
 								className='px-1 condition-codes '
@@ -895,18 +897,18 @@ export const Ubo4FormAdvance = (props) => {
 					<Col sm={2} xs={12}>
 						<Row>
 							<Form.Group
-								className=' px-1 mb-1 label-color-simple'
+								className=' px-1 mb-1 '
 								as={Col}
 								xs='6'
 								controlId='validationCustom02'>
-								<div>16 DHR</div>
+								<div className='label-color-simple'>16 DHR</div>
 							</Form.Group>
 							<Form.Group
-								className=' px-1 mb-1 label-color-simple'
+								className=' px-1 mb-1 '
 								as={Col}
 								xs='6'
 								controlId='validationCustom02'>
-								<div>17 STAT</div>
+								<div className='label-color-simple'>17 STAT</div>
 							</Form.Group>
 						</Row>
 
@@ -933,18 +935,20 @@ export const Ubo4FormAdvance = (props) => {
 					<Col sm={6} xs={12}>
 						<Row>
 							<Col xs={6}>
-								<Row className='text-center px-1'>
+								<Row className='text-center'>
 									<Form.Group
-										className=' mb-1 label-color'
+										className=' mb-1 px-1'
 										as={Col}
 										xs='12'
 										controlId='validationCustom02'>
-										<p className='tag-6  '>31 OCCURRENCE</p>
+										<div className=' label-color'>
+											<p className='tag-6  '>31 OCCURRENCE</p>
 
-										<p className=' tag-6-from-through '>
-											<div>CODE</div>
-											<div>DATE</div>
-										</p>
+											<p className=' tag-6-from-through '>
+												<div>CODE</div>
+												<div>DATE</div>
+											</p>
+										</div>
 									</Form.Group>
 									<Form.Group
 										className=' mb-1 px-1'
@@ -977,42 +981,44 @@ export const Ubo4FormAdvance = (props) => {
 								</Row>
 							</Col>
 							<Col xs={6}>
-								<Row className='text-center px-1'>
+								<Row className='text-center'>
 									<Form.Group
 										className='mb-1  label-color'
 										as={Col}
 										xs='12'
 										controlId='validationCustom02'>
-										<p className='tag-6'>32 OCCURRENCE</p>
+										<div className=' label-color'>
+											<p className='tag-6  '>32 OCCURRENCE</p>
 
-										<p className=' tag-6-from-through '>
-											<div>CODE</div>
-											<div>DATE</div>
-										</p>
+											<p className=' tag-6-from-through '>
+												<div>CODE</div>
+												<div>DATE</div>
+											</p>
+										</div>
 									</Form.Group>
 									<Form.Group
-										className=' mb-1 px-1'
+										className=' mb-1 px-0'
 										as={Col}
 										xs='6'
 										controlId='validationCustom02'>
 										<Form.Control required type='number' />
 									</Form.Group>
 									<Form.Group
-										className='px-1'
+										className='px-0'
 										as={Col}
 										xs='6'
 										controlId='validationCustom02'>
 										<Form.Control required type='date' />
 									</Form.Group>
 									<Form.Group
-										className=' mb-1 px-1'
+										className=' mb-1 px-0'
 										as={Col}
 										xs='6'
 										controlId='validationCustom02'>
 										<Form.Control required type='number' />
 									</Form.Group>
 									<Form.Group
-										className='px-1'
+										className='px-0'
 										as={Col}
 										xs='6'
 										controlId='validationCustom02'>
@@ -1031,36 +1037,38 @@ export const Ubo4FormAdvance = (props) => {
 										as={Col}
 										xs='12'
 										controlId='validationCustom02'>
-										<p className='tag-6'>33 OCCURRENCE</p>
+										<div className=' label-color'>
+											<p className='tag-6  '>33 OCCURRENCE</p>
 
-										<p className=' tag-6-from-through '>
-											<div>CODE</div>
-											<div>DATE</div>
-										</p>
+											<p className=' tag-6-from-through '>
+												<div>CODE</div>
+												<div>DATE</div>
+											</p>
+										</div>
 									</Form.Group>
 									<Form.Group
-										className='mb-1 px-1'
+										className='mb-1 px-0'
 										as={Col}
 										xs='6'
 										controlId='validationCustom02'>
 										<Form.Control required type='number' />
 									</Form.Group>
 									<Form.Group
-										className='px-1'
+										className='px-0'
 										as={Col}
 										xs='6'
 										controlId='validationCustom02'>
 										<Form.Control required type='date' />
 									</Form.Group>
 									<Form.Group
-										className='mb-1 px-1'
+										className='mb-1 px-0'
 										as={Col}
 										xs='6'
 										controlId='validationCustom02'>
 										<Form.Control required type='number' />
 									</Form.Group>
 									<Form.Group
-										className='px-1'
+										className='px-0'
 										as={Col}
 										xs='6'
 										controlId='validationCustom02'>
@@ -1069,42 +1077,44 @@ export const Ubo4FormAdvance = (props) => {
 								</Row>
 							</Col>
 							<Col xs={6}>
-								<Row className='text-center px-1'>
+								<Row className='text-center px-0'>
 									<Form.Group
 										className='mb-1 label-color'
 										as={Col}
 										xs='12'
 										controlId='validationCustom02'>
-										<p className='tag-6'>35 OCCURRENCE</p>
+										<div className=' label-color'>
+											<p className='tag-6  '>34 OCCURRENCE</p>
 
-										<p className=' tag-6-from-through '>
-											<div>CODE</div>
-											<div>DATE</div>
-										</p>
+											<p className=' tag-6-from-through '>
+												<div>CODE</div>
+												<div>DATE</div>
+											</p>
+										</div>
 									</Form.Group>
 									<Form.Group
-										className=' mb-1 px-1'
+										className=' mb-1 px-0'
 										as={Col}
 										xs='6'
 										controlId='validationCustom02'>
 										<Form.Control required type='number' />
 									</Form.Group>
 									<Form.Group
-										className=' px-1'
+										className=' px-0'
 										as={Col}
 										xs='6'
 										controlId='validationCustom02'>
 										<Form.Control required type='date' />
 									</Form.Group>
 									<Form.Group
-										className=' mb-1 px-1'
+										className=' mb-1 px-0'
 										as={Col}
 										xs='6'
 										controlId='validationCustom02'>
 										<Form.Control required type='number' />
 									</Form.Group>
 									<Form.Group
-										className='px-1'
+										className='px-0'
 										as={Col}
 										xs='6'
 										controlId='validationCustom02'>
@@ -1134,42 +1144,42 @@ export const Ubo4FormAdvance = (props) => {
 										</p>
 									</Form.Group>
 									<Form.Group
-										className=' mb-1 px-1'
+										className=' mb-1 px-0'
 										as={Col}
 										xs='4'
 										controlId='validationCustom02'>
 										<Form.Control required type='number' />
 									</Form.Group>
 									<Form.Group
-										className=' mb-1 px-1'
+										className=' mb-1 px-0'
 										as={Col}
 										xs='4'
 										controlId='validationCustom02'>
 										<Form.Control required type='number' />
 									</Form.Group>
 									<Form.Group
-										className=' mb-1 px-1'
+										className=' mb-1 px-0'
 										as={Col}
 										xs='4'
 										controlId='validationCustom02'>
 										<Form.Control required type='number' />
 									</Form.Group>
 									<Form.Group
-										className='px-1'
+										className='px-0'
 										as={Col}
 										xs='4'
 										controlId='validationCustom02'>
 										<Form.Control required type='date' />
 									</Form.Group>
 									<Form.Group
-										className='mb-1 px-1'
+										className='mb-1 px-0'
 										as={Col}
 										xs='4'
 										controlId='validationCustom02'>
 										<Form.Control required type='number' />
 									</Form.Group>
 									<Form.Group
-										className='px-1'
+										className='px-0'
 										as={Col}
 										xs='4'
 										controlId='validationCustom02'>
@@ -1193,42 +1203,42 @@ export const Ubo4FormAdvance = (props) => {
 										</p>
 									</Form.Group>
 									<Form.Group
-										className=' mb-1 px-1'
+										className=' mb-1 px-0'
 										as={Col}
 										xs='4'
 										controlId='validationCustom02'>
 										<Form.Control required type='number' />
 									</Form.Group>
 									<Form.Group
-										className=' mb-1 px-1'
+										className=' mb-1 px-0'
 										as={Col}
 										xs='4'
 										controlId='validationCustom02'>
 										<Form.Control required type='number' />
 									</Form.Group>
 									<Form.Group
-										className=' mb-1 px-1'
+										className=' mb-1 px-0'
 										as={Col}
 										xs='4'
 										controlId='validationCustom02'>
 										<Form.Control required type='number' />
 									</Form.Group>
 									<Form.Group
-										className='px-1'
+										className='px-0'
 										as={Col}
 										xs='4'
 										controlId='validationCustom02'>
 										<Form.Control required type='date' />
 									</Form.Group>
 									<Form.Group
-										className='mb-1 px-1'
+										className='mb-1 px-0'
 										as={Col}
 										xs='4'
 										controlId='validationCustom02'>
 										<Form.Control required type='number' />
 									</Form.Group>
 									<Form.Group
-										className='px-1'
+										className='px-0'
 										as={Col}
 										xs='4'
 										controlId='validationCustom02'>
@@ -1247,11 +1257,11 @@ export const Ubo4FormAdvance = (props) => {
 							<Form.Control required type='number' />
 						</Form.Group>
 						<Form.Group
-							className='px-1 h-100'
+							className='px-1 '
 							as={Col}
 							xs='12'
 							controlId='validationCustom02'>
-							<Form.Control className='' as='textarea' required />
+							<Form.Control className='h-100' as='textarea' required />
 						</Form.Group>
 					</Col>
 				</Row>
@@ -1280,12 +1290,14 @@ export const Ubo4FormAdvance = (props) => {
 											as={Col}
 											xs='12'
 											controlId='validationCustom02'>
-											<p className='tag-6 h6  '>31 OCCURRENCE</p>
+											<div className='label-color'>
+												<p className='tag-6 '>31 OCCURRENCE</p>
 
-											<p className=' tag-6-from-through '>
-												<div>CODE</div>
-												<div>DATE</div>
-											</p>
+												<p className=' tag-6-from-through '>
+													<div>CODE</div>
+													<div>DATE</div>
+												</p>
+											</div>
 										</Form.Group>
 									</td>
 								</tr>
