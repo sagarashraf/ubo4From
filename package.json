@@ -13,7 +13,7 @@
 		"react": "^18.1.0",
 		"react-bootstrap": "^2.3.1",
 		"react-currency-format": "^1.1.0",
-		"react-currency-input-field": "^3.0.0-beta.7 --legacy-peer-deps",
+		"react-currency-input-field": "^3.0.0-beta.7 ",
 		"react-datepicker": "^4.7.0",
 		"react-dom": "^18.1.0",
 		"react-input-number": "^5.0.19",

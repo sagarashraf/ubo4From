@@ -42,17 +42,17 @@ input[type="date"]:focus::-webkit-datetime-edit {
 	color: black !important;
 }
 .form-control {
-	border: 1px solid #9bee6c !important;
+	border: 1px solid #1cb079 !important;
 }
 .label-color {
-	background-color: #9bee6c !important;
+	background-color: #1cb079 !important;
 	border-radius: 5px !important;
 	color: white;
 	font-size: 12px !important;
 	height: 100%;
 }
 .label-color-simple {
-	background-color: #9bee6c !important;
+	background-color: #1cb079 !important;
 	border-radius: 5px !important;
 	color: white;
 	padding: 8px 5px;
@@ -96,7 +96,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 	color: #212529;
 	background-color: #fff;
 	background-clip: padding-box;
-	border: 1px solid #9bee6c !important;
+	border: 1px solid #1cb079 !important;
 	appearance: none;
 	border-radius: 0.25rem;
 	outline: none !important;
