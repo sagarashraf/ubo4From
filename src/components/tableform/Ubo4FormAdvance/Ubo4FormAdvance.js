@@ -1,18 +1,9 @@
 import React, { useState } from "react";
-import {
-	Container,
-	Row,
-	Col,
-	Form,
-	Button,
-	InputGroup,
-	Alert,
-	Table,
-} from "react-bootstrap";
+import { Container, Row, Col, Form, Table } from "react-bootstrap";
 import "./Ubo4FormAdvance.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlusCircle, faXmark } from "@fortawesome/free-solid-svg-icons";
-
+import CurrencyInput from "react-currency-input-field";
 /**
  * @author
  * @function Ubo4FormAdvance
@@ -21,6 +12,7 @@ import { faPlusCircle, faXmark } from "@fortawesome/free-solid-svg-icons";
 export const Ubo4FormAdvance = (props) => {
 	const [pagenumber, setpagenumber] = useState(1);
 	const [totalpages, settotalpages] = useState(1);
+	const [num, setNum] = useState(2.2);
 	const [tableData, settableData] = useState([
 		{
 			rev: "",
@@ -279,9 +271,6 @@ export const Ubo4FormAdvance = (props) => {
 
 	return (
 		<Container>
-			{/* <Alert className='text-center' variant='success'>
-				<h1>INPATIENT</h1>
-			</Alert> */}
 			<Row className='justify-content-center'>
 				<Row>
 					<Col className='px-2' lg={6}>
@@ -320,13 +309,20 @@ export const Ubo4FormAdvance = (props) => {
 										controlId='validationCustom02'>
 										<Form.Control required type='text' placeholder='D' />
 									</Form.Group>
-									<Form.Group
-										className='px-1'
-										as={Col}
-										xs='3'
-										controlId='validationCustom02'>
-										<Form.Control required type='text' placeholder='E' />
-									</Form.Group>
+
+									<Col xs={3} className='mb-2 px-1'>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='1000'
+											defaultValue={1000}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
+									</Col>
 								</Row>
 								<Row className='px-2'>
 									<Form.Group
@@ -389,13 +385,19 @@ export const Ubo4FormAdvance = (props) => {
 										controlId='validationCustom02'>
 										<Form.Control required type='text' placeholder='D' />
 									</Form.Group>
-									<Form.Group
-										className='px-1'
-										as={Col}
-										xs='3'
-										controlId='validationCustom02'>
-										<Form.Control required type='text' placeholder='E' />
-									</Form.Group>
+									<Col xs={3} className='mb-2 px-1'>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='1000'
+											defaultValue={1000}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
+									</Col>
 								</Row>
 								<Row className='px-2'>
 									<Form.Group
@@ -427,14 +429,20 @@ export const Ubo4FormAdvance = (props) => {
 								controlId='validationCustom02'>
 								<div className=' label-color-simple'>3a PAT. CNTL #</div>
 							</Form.Group>
+							<Col xs={6} className=' px-1'>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
 
-							<Form.Group
-								className='px-1'
-								as={Col}
-								xs='6'
-								controlId='validationCustom02'>
-								<Form.Control required type='text' />
-							</Form.Group>
 							<Form.Group
 								className=' px-1 '
 								as={Col}
@@ -452,20 +460,33 @@ export const Ubo4FormAdvance = (props) => {
 								<div className=' label-color-simple'>b. MED .REC . #</div>
 							</Form.Group>
 
-							<Form.Group
-								className='px-1'
-								as={Col}
-								xs='6'
-								controlId='validationCustom02'>
-								<Form.Control required type='text' />
-							</Form.Group>
-							<Form.Group
-								className='px-1'
-								as={Col}
-								xs='3'
-								controlId='validationCustom02'>
-								<Form.Control required type='text' />
-							</Form.Group>
+							<Col xs={6} className=' px-1'>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
+
+							<Col xs={3} className=' px-1'>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
 						</Row>
 					</Col>
 				</Row>
@@ -477,16 +498,22 @@ export const Ubo4FormAdvance = (props) => {
 								as={Col}
 								xs='12'
 								controlId='validationCustom02'>
-								<Form.Control required type='text' />
+								<div className=' label-color-simple'>5 FED. TAX NO</div>
 							</Form.Group>
 
-							<Form.Group
-								className=' mt-1 tax-No-5'
-								as={Col}
-								xs='12'
-								controlId='validationCustom02'>
-								<Form.Control required type='text' />
-							</Form.Group>
+							<Col xs={12} className=' px-1 mt-1'>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
 						</Row>
 					</Col>
 					<Col className='px-2' xs={6}>
@@ -497,7 +524,9 @@ export const Ubo4FormAdvance = (props) => {
 								xs='12'
 								controlId='validationCustom02'>
 								<div className='label-color'>
-									<p className='tag-6 h6'>6 STATEMENT COVERS PERIOD</p>
+									<p style={{ marginBottom: "0.75%" }} className='tag-6'>
+										6 STATEMENT COVERS PERIOD
+									</p>
 
 									<p className=' tag-6-from-through '>
 										<div>FROM</div>
@@ -640,13 +669,19 @@ export const Ubo4FormAdvance = (props) => {
 										controlId='validationCustom02'>
 										<div className='label-color-simple'>d.</div>
 									</Form.Group>
-									<Form.Group
-										className='mb-2 px-1'
-										as={Col}
-										xs='2'
-										controlId='validationCustom02'>
-										<Form.Control required type='text' placeholder='' />
-									</Form.Group>
+									<Col xs={2} className=' px-1'>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='1000'
+											defaultValue={1000}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
+									</Col>
 									<Form.Group
 										className=' px-1 '
 										as={Col}
@@ -730,27 +765,46 @@ export const Ubo4FormAdvance = (props) => {
 								controlId='validationCustom02'>
 								<Form.Control required type='date' />
 							</Form.Group>
-							<Form.Group
-								className='px-1'
-								as={Col}
-								xs='3'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
-							<Form.Group
-								className='px-1'
-								as={Col}
-								xs='3'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
-							<Form.Group
-								className='px-1'
-								as={Col}
-								xs='3'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
+							<Col xs={3} className=' px-1'>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
+
+							<Col xs={3} className=' px-1 '>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
+							<Col xs={3} className=' px-1 '>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
 						</Row>
 					</Col>
 					<Col sm={3} xs={12}>
@@ -771,21 +825,32 @@ export const Ubo4FormAdvance = (props) => {
 							</Form.Group>
 						</Row>
 						<Row>
-							<Form.Group
-								className='mb-2 px-1'
-								as={Col}
-								xs='6'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
-
-							<Form.Group
-								className='mb-2 px-1'
-								as={Col}
-								xs='6'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
+							<Col xs={6} className=' px-1 '>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
+							<Col xs={6} className=' px-1'>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
 						</Row>
 					</Col>
 				</Row>
@@ -815,83 +880,149 @@ export const Ubo4FormAdvance = (props) => {
 									</p>
 								</div>
 							</Form.Group>
-							<Form.Group
-								className='px-1 condition-codes '
-								as={Col}
-								xs='1'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
-							<Form.Group
-								className='px-1 condition-codes'
-								as={Col}
-								xs='1'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
-							<Form.Group
-								className='px-1 condition-codes'
-								as={Col}
-								xs='1'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
-							<Form.Group
-								className='px-1 condition-codes'
-								as={Col}
-								xs='1'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
-							<Form.Group
-								className='px-1 condition-codes'
-								as={Col}
-								xs='1'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
-							<Form.Group
-								className='px-1 condition-codes'
-								as={Col}
-								xs='1'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
-							<Form.Group
-								className='px-1 condition-codes'
-								as={Col}
-								xs='1'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
-							<Form.Group
-								className='px-1 condition-codes'
-								as={Col}
-								xs='1'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
-							<Form.Group
-								className='px-1 condition-codes'
-								as={Col}
-								xs='1'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
-							<Form.Group
-								className='px-1 condition-codes'
-								as={Col}
-								xs='1'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
-							<Form.Group
-								className='px-1 condition-codes'
-								as={Col}
-								xs='1'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
+							<Col xs={1} className=' px-1 condition-codes'>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
+							<Col xs={1} className=' px-1 condition-codes'>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
+							<Col xs={1} className=' px-1 condition-codes'>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
+							<Col xs={1} className=' px-1 condition-codes'>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
+							<Col xs={1} className=' px-1 condition-codes'>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
+							<Col xs={1} className=' px-1 condition-codes'>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
+							<Col xs={1} className=' px-1 condition-codes'>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
+							<Col xs={1} className=' px-1 condition-codes'>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
+							<Col xs={1} className=' px-1 condition-codes'>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
+							<Col xs={1} className=' px-1 condition-codes'>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
+							<Col xs={1} className=' px-1 condition-codes'>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
 						</Row>
 					</Col>
 					<Col sm={2} xs={12}>
@@ -913,21 +1044,33 @@ export const Ubo4FormAdvance = (props) => {
 						</Row>
 
 						<Row>
-							<Form.Group
-								className='mb-1 px-1'
-								as={Col}
-								xs='6'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
+							<Col xs={6} className=' px-1 '>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
 
-							<Form.Group
-								className='mb-1 px-1'
-								as={Col}
-								xs='6'
-								controlId='validationCustom02'>
-								<Form.Control required type='number' />
-							</Form.Group>
+							<Col xs={6} className=' px-1 '>
+								<CurrencyInput
+									className='input-field-control '
+									id='input-example'
+									name='input-name'
+									placeholder='1000'
+									defaultValue={1000}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
 						</Row>
 					</Col>
 				</Row>
@@ -950,13 +1093,19 @@ export const Ubo4FormAdvance = (props) => {
 											</p>
 										</div>
 									</Form.Group>
-									<Form.Group
-										className=' mb-1 px-1'
-										as={Col}
-										xs='6'
-										controlId='validationCustom02'>
-										<Form.Control required type='number' />
-									</Form.Group>
+									<Col xs={6} className=' px-1 mb-1 '>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='1000'
+											defaultValue={1000}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
+									</Col>
 									<Form.Group
 										className='px-1'
 										as={Col}
@@ -964,13 +1113,19 @@ export const Ubo4FormAdvance = (props) => {
 										controlId='validationCustom02'>
 										<Form.Control required type='date' />
 									</Form.Group>
-									<Form.Group
-										className='mb-1 px-1'
-										as={Col}
-										xs='6'
-										controlId='validationCustom02'>
-										<Form.Control required type='number' />
-									</Form.Group>
+									<Col xs={6} className=' px-1 mb-1 '>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='1000'
+											defaultValue={1000}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
+									</Col>
 									<Form.Group
 										className='px-1'
 										as={Col}
@@ -996,13 +1151,19 @@ export const Ubo4FormAdvance = (props) => {
 											</p>
 										</div>
 									</Form.Group>
-									<Form.Group
-										className=' mb-1 px-0'
-										as={Col}
-										xs='6'
-										controlId='validationCustom02'>
-										<Form.Control required type='number' />
-									</Form.Group>
+									<Col xs={6} className=' px-0 mb-1 '>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='1000'
+											defaultValue={1000}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
+									</Col>
 									<Form.Group
 										className='px-0'
 										as={Col}
@@ -1010,13 +1171,19 @@ export const Ubo4FormAdvance = (props) => {
 										controlId='validationCustom02'>
 										<Form.Control required type='date' />
 									</Form.Group>
-									<Form.Group
-										className=' mb-1 px-0'
-										as={Col}
-										xs='6'
-										controlId='validationCustom02'>
-										<Form.Control required type='number' />
-									</Form.Group>
+									<Col xs={6} className=' px-0 mb-1 '>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='1000'
+											defaultValue={1000}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
+									</Col>
 									<Form.Group
 										className='px-0'
 										as={Col}
@@ -1046,13 +1213,19 @@ export const Ubo4FormAdvance = (props) => {
 											</p>
 										</div>
 									</Form.Group>
-									<Form.Group
-										className='mb-1 px-0'
-										as={Col}
-										xs='6'
-										controlId='validationCustom02'>
-										<Form.Control required type='number' />
-									</Form.Group>
+									<Col xs={6} className=' px-0 mb-1 '>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='1000'
+											defaultValue={1000}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
+									</Col>
 									<Form.Group
 										className='px-0'
 										as={Col}
@@ -1060,15 +1233,22 @@ export const Ubo4FormAdvance = (props) => {
 										controlId='validationCustom02'>
 										<Form.Control required type='date' />
 									</Form.Group>
+
+									<Col xs={6} className=' px-0 mb-1 '>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='1000'
+											defaultValue={1000}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
+									</Col>
 									<Form.Group
 										className='mb-1 px-0'
-										as={Col}
-										xs='6'
-										controlId='validationCustom02'>
-										<Form.Control required type='number' />
-									</Form.Group>
-									<Form.Group
-										className='px-0'
 										as={Col}
 										xs='6'
 										controlId='validationCustom02'>
@@ -1092,13 +1272,19 @@ export const Ubo4FormAdvance = (props) => {
 											</p>
 										</div>
 									</Form.Group>
-									<Form.Group
-										className=' mb-1 px-0'
-										as={Col}
-										xs='6'
-										controlId='validationCustom02'>
-										<Form.Control required type='number' />
-									</Form.Group>
+									<Col xs={6} className=' px-0 mb-1 '>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='1000'
+											defaultValue={1000}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
+									</Col>
 									<Form.Group
 										className=' px-0'
 										as={Col}
@@ -1106,13 +1292,19 @@ export const Ubo4FormAdvance = (props) => {
 										controlId='validationCustom02'>
 										<Form.Control required type='date' />
 									</Form.Group>
-									<Form.Group
-										className=' mb-1 px-0'
-										as={Col}
-										xs='6'
-										controlId='validationCustom02'>
-										<Form.Control required type='number' />
-									</Form.Group>
+									<Col xs={6} className=' px-0 mb-1 '>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='1000'
+											defaultValue={1000}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
+									</Col>
 									<Form.Group
 										className='px-0'
 										as={Col}
@@ -1139,44 +1331,56 @@ export const Ubo4FormAdvance = (props) => {
 
 										<p className=' tag-6-from-through '>
 											<div>CODE</div>
-											<div>DATE</div>
-											<div>DATE</div>
+											<div>FROM</div>
+											<div>THROUGH</div>
 										</p>
 									</Form.Group>
+									<Col xs={4} className=' px-0 mb-1 '>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='1000'
+											defaultValue={1000}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
+									</Col>
 									<Form.Group
 										className=' mb-1 px-0'
-										as={Col}
-										xs='4'
-										controlId='validationCustom02'>
-										<Form.Control required type='number' />
-									</Form.Group>
-									<Form.Group
-										className=' mb-1 px-0'
-										as={Col}
-										xs='4'
-										controlId='validationCustom02'>
-										<Form.Control required type='number' />
-									</Form.Group>
-									<Form.Group
-										className=' mb-1 px-0'
-										as={Col}
-										xs='4'
-										controlId='validationCustom02'>
-										<Form.Control required type='number' />
-									</Form.Group>
-									<Form.Group
-										className='px-0'
 										as={Col}
 										xs='4'
 										controlId='validationCustom02'>
 										<Form.Control required type='date' />
 									</Form.Group>
 									<Form.Group
+										className=' mb-1 px-0'
+										as={Col}
+										xs='4'
+										controlId='validationCustom02'>
+										<Form.Control required type='date' />
+									</Form.Group>
+									<Col xs={4} className=' px-0 mb-1 '>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='1000'
+											defaultValue={1000}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
+									</Col>
+									<Form.Group
 										className='mb-1 px-0'
 										as={Col}
 										xs='4'
 										controlId='validationCustom02'>
-										<Form.Control required type='number' />
+										<Form.Control required type='date' />
 									</Form.Group>
 									<Form.Group
 										className='px-0'
@@ -1198,44 +1402,56 @@ export const Ubo4FormAdvance = (props) => {
 
 										<p className=' tag-6-from-through '>
 											<div>CODE</div>
-											<div>DATE</div>
-											<div>DATE</div>
+											<div>FROM</div>
+											<div>THROUGH</div>
 										</p>
 									</Form.Group>
+									<Col xs={4} className=' px-0 mb-1 '>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='1000'
+											defaultValue={1000}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
+									</Col>
 									<Form.Group
 										className=' mb-1 px-0'
-										as={Col}
-										xs='4'
-										controlId='validationCustom02'>
-										<Form.Control required type='number' />
-									</Form.Group>
-									<Form.Group
-										className=' mb-1 px-0'
-										as={Col}
-										xs='4'
-										controlId='validationCustom02'>
-										<Form.Control required type='number' />
-									</Form.Group>
-									<Form.Group
-										className=' mb-1 px-0'
-										as={Col}
-										xs='4'
-										controlId='validationCustom02'>
-										<Form.Control required type='number' />
-									</Form.Group>
-									<Form.Group
-										className='px-0'
 										as={Col}
 										xs='4'
 										controlId='validationCustom02'>
 										<Form.Control required type='date' />
 									</Form.Group>
 									<Form.Group
+										className=' mb-1 px-0'
+										as={Col}
+										xs='4'
+										controlId='validationCustom02'>
+										<Form.Control required type='date' />
+									</Form.Group>
+									<Col xs={4} className=' px-0 mb-1 '>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='1000'
+											defaultValue={1000}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
+									</Col>
+									<Form.Group
 										className='mb-1 px-0'
 										as={Col}
 										xs='4'
 										controlId='validationCustom02'>
-										<Form.Control required type='number' />
+										<Form.Control required type='date' />
 									</Form.Group>
 									<Form.Group
 										className='px-0'
@@ -1254,7 +1470,7 @@ export const Ubo4FormAdvance = (props) => {
 							as={Col}
 							xs='12'
 							controlId='validationCustom02'>
-							<Form.Control required type='number' />
+							<Form.Control required type='text' />
 						</Form.Group>
 						<Form.Group
 							className='px-1 '
@@ -1304,9 +1520,21 @@ export const Ubo4FormAdvance = (props) => {
 								<tr className='h-100'>
 									<td>a</td>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='date' />
-										</Form.Group>
+										<Col className=' px-0 mb-1 '>
+											<CurrencyInput
+												className='input-field-control '
+												id='input-example'
+												name='input-name'
+												placeholder='1000'
+												defaultValue={1000}
+												allowDecimals={true}
+												decimalsLimit={2}
+												disableGroupSeparators={true}
+												onValueChange={(value, name) =>
+													console.log(value, name)
+												}
+											/>
+										</Col>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
@@ -1317,9 +1545,21 @@ export const Ubo4FormAdvance = (props) => {
 								<tr className='h-100'>
 									<td style={{ width: "5%" }}>b</td>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='date' />
-										</Form.Group>
+										<Col className=' px-0 mb-1 '>
+											<CurrencyInput
+												className='input-field-control '
+												id='input-example'
+												name='input-name'
+												placeholder='1000'
+												defaultValue={1000}
+												allowDecimals={true}
+												decimalsLimit={2}
+												disableGroupSeparators={true}
+												onValueChange={(value, name) =>
+													console.log(value, name)
+												}
+											/>
+										</Col>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
@@ -1330,9 +1570,21 @@ export const Ubo4FormAdvance = (props) => {
 								<tr className='h-100'>
 									<td style={{ width: "5%" }}>c</td>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='date' />
-										</Form.Group>
+										<Col className=' px-0 mb-1 '>
+											<CurrencyInput
+												className='input-field-control '
+												id='input-example'
+												name='input-name'
+												placeholder='1000'
+												defaultValue={1000}
+												allowDecimals={true}
+												decimalsLimit={2}
+												disableGroupSeparators={true}
+												onValueChange={(value, name) =>
+													console.log(value, name)
+												}
+											/>
+										</Col>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
@@ -1343,9 +1595,21 @@ export const Ubo4FormAdvance = (props) => {
 								<tr className='h-100'>
 									<td style={{ width: "5%" }}>d</td>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='date' />
-										</Form.Group>
+										<Col className=' px-0 mb-1 '>
+											<CurrencyInput
+												className='input-field-control '
+												id='input-example'
+												name='input-name'
+												placeholder='1000'
+												defaultValue={1000}
+												allowDecimals={true}
+												decimalsLimit={2}
+												disableGroupSeparators={true}
+												onValueChange={(value, name) =>
+													console.log(value, name)
+												}
+											/>
+										</Col>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
@@ -1382,15 +1646,19 @@ export const Ubo4FormAdvance = (props) => {
 										<tr>
 											<td className='px-0'>{index}</td>
 											<td>
-												<Form.Group
-													className='px-0'
-													controlId='validationCustom02'>
-													<Form.Control
-														value={data.rev}
-														required
-														type='number'
-													/>
-												</Form.Group>
+												<CurrencyInput
+													className='input-field-control '
+													id='input-example'
+													name='input-name'
+													placeholder='100'
+													defaultValue={100}
+													allowDecimals={true}
+													decimalsLimit={2}
+													disableGroupSeparators={true}
+													onValueChange={(value, name) =>
+														console.log(value, name)
+													}
+												/>
 											</td>
 											<td className='px-0'>
 												<Form.Group controlId='validationCustom02'>
@@ -1403,13 +1671,19 @@ export const Ubo4FormAdvance = (props) => {
 												</Form.Group>
 											</td>
 											<td className='px-0'>
-												<Form.Group controlId='validationCustom02'>
-													<Form.Control
-														value={data.hpps}
-														required
-														type='number'
-													/>
-												</Form.Group>
+												<CurrencyInput
+													className='input-field-control '
+													id='input-example'
+													name='input-name'
+													placeholder='100'
+													defaultValue={100}
+													allowDecimals={true}
+													decimalsLimit={2}
+													disableGroupSeparators={true}
+													onValueChange={(value, name) =>
+														console.log(value, name)
+													}
+												/>
 											</td>
 											<td className='px-0'>
 												<Form.Group controlId='validationCustom02'>
@@ -1421,38 +1695,58 @@ export const Ubo4FormAdvance = (props) => {
 												</Form.Group>
 											</td>
 											<td className='px-0'>
-												<Form.Group controlId='validationCustom02'>
-													<Form.Control
-														value={data.units}
-														required
-														type='number'
-													/>
-												</Form.Group>
+												<CurrencyInput
+													className='input-field-control '
+													id='input-example'
+													name='input-name'
+													placeholder='100'
+													defaultValue={index}
+													allowDecimals={true}
+													decimalsLimit={2}
+													disableGroupSeparators={true}
+													onValueChange={(value, name) =>
+														console.log(value, name)
+													}
+												/>
 											</td>
 											<td className='px-0'>
-												<Form.Group controlId='validationCustom02'>
-													<Form.Control
-														value={data.charges}
-														required
-														type='number'
-													/>
-												</Form.Group>
+												<CurrencyInput
+													className='input-field-control '
+													id='input-example'
+													name='input-name'
+													placeholder='100'
+													defaultValue={100}
+													allowDecimals={true}
+													decimalsLimit={2}
+													disableGroupSeparators={true}
+													onValueChange={(value, name) =>
+														console.log(value, name)
+													}
+													prefix='$'
+												/>
 											</td>
 											<td className='px-0'>
-												<Form.Group controlId='validationCustom02'>
-													<Form.Control
-														value={data.nonCovered}
-														required
-														type='number'
-													/>
-												</Form.Group>
+												<CurrencyInput
+													className='input-field-control '
+													id='input-example'
+													name='input-name'
+													placeholder='100'
+													defaultValue={100}
+													allowDecimals={true}
+													decimalsLimit={2}
+													disableGroupSeparators={true}
+													onValueChange={(value, name) =>
+														console.log(value, name)
+													}
+													prefix='$'
+												/>
 											</td>
 											<td className='px-0'>
 												<Form.Group controlId='validationCustom02'>
 													<Form.Control
 														value={data.empty}
 														required
-														type='number'
+														type='text'
 													/>
 												</Form.Group>
 											</td>
@@ -1487,7 +1781,7 @@ export const Ubo4FormAdvance = (props) => {
 										</div>
 									</td>
 									<td>
-										<input type='number' className='input-field-general' />
+										<input type='text' className='input-field-general' />
 									</td>
 									<td>
 										<label style={{ fontSize: "18px" }} className='fw-bold'>
@@ -1535,53 +1829,89 @@ export const Ubo4FormAdvance = (props) => {
 									<td>A</td>
 									<td>
 										<Form.Group controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
-										<Form.Group controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+											prefix='$'
+										/>
 									</td>
 									<td>
 										<Form.Group controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<select className='form-control'>
+												<option>YES</option>
+												<option>No</option>
+											</select>
 										</Form.Group>
 									</td>
 								</tr>
 								<tr>
 									<td>B</td>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+										<Form.Group controlId='validationCustom02'>
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+											prefix='$'
+										/>
 									</td>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+										<Form.Group controlId='validationCustom02'>
+											<select className='form-control'>
+												<option>YES</option>
+												<option>No</option>
+											</select>
 										</Form.Group>
 									</td>
 								</tr>
 								<tr>
 									<td>C</td>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+										<Form.Group controlId='validationCustom02'>
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+											prefix='$'
+										/>
 									</td>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+										<Form.Group controlId='validationCustom02'>
+											<select className='form-control'>
+												<option>YES</option>
+												<option>No</option>
+											</select>
 										</Form.Group>
 									</td>
 								</tr>
@@ -1604,23 +1934,44 @@ export const Ubo4FormAdvance = (props) => {
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<select className='form-control'>
+												<option>YES</option>
+												<option>No</option>
+											</select>
 										</Form.Group>
 									</td>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+											prefix='$'
+										/>
 									</td>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+											prefix='$'
+										/>
 									</td>
 									<td rowSpan={3}> 57 OTHER PRV ID</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>A</td>
@@ -1629,23 +1980,44 @@ export const Ubo4FormAdvance = (props) => {
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<select className='form-control'>
+												<option>YES</option>
+												<option>No</option>
+											</select>
 										</Form.Group>
 									</td>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+											prefix='$'
+										/>
 									</td>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+											prefix='$'
+										/>
 									</td>
 
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>B</td>
@@ -1653,23 +2025,44 @@ export const Ubo4FormAdvance = (props) => {
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<select className='form-control'>
+												<option>YES</option>
+												<option>No</option>
+											</select>
 										</Form.Group>
 									</td>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+											prefix='$'
+										/>
 									</td>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+											prefix='$'
+										/>
 									</td>
 
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>C</td>
@@ -1686,24 +2079,24 @@ export const Ubo4FormAdvance = (props) => {
 								<tr className='second-general-tables label-color'>
 									<th className=''>58 INSURED’S NAME</th>
 									<th>59 P. REL</th>
-									<th>60 INSURED ’S UNI QUE ID</th>
+									<th>60 INSURED ’S UNIQUE ID</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
@@ -1711,34 +2104,34 @@ export const Ubo4FormAdvance = (props) => {
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
@@ -1758,41 +2151,65 @@ export const Ubo4FormAdvance = (props) => {
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100342342}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
 									</td>
 								</tr>
 
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100342342}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100342342}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
 									</td>
 								</tr>
 							</tbody>
@@ -1811,7 +2228,7 @@ export const Ubo4FormAdvance = (props) => {
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
@@ -1819,14 +2236,14 @@ export const Ubo4FormAdvance = (props) => {
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
@@ -1837,30 +2254,54 @@ export const Ubo4FormAdvance = (props) => {
 						<Table className='table-bottom-margin' borderless size='sm'>
 							<thead>
 								<tr className='second-general-tables label-color'>
-									<th>63 TREATMENT AUTHORIZATION CODES</th>
+									<th>64 DOCUMENT CONTROL NUMBER </th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100342342}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
 									</td>
 								</tr>
 
 								<tr>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100342342}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100342342}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
 									</td>
 								</tr>
 							</tbody>
@@ -1870,14 +2311,14 @@ export const Ubo4FormAdvance = (props) => {
 						<Table className='table-bottom-margin' borderless size='sm'>
 							<thead>
 								<tr className='second-general-tables label-color'>
-									<th>63 TREATMENT AUTHORIZATION CODES</th>
+									<th>65 EMPLOYER NAME</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
@@ -1885,14 +2326,14 @@ export const Ubo4FormAdvance = (props) => {
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
@@ -1914,60 +2355,68 @@ export const Ubo4FormAdvance = (props) => {
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
 
 								<tr>
 									<td>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100342}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
+									</td>
+									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
-									</td>
-									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
@@ -1980,27 +2429,27 @@ export const Ubo4FormAdvance = (props) => {
 								<tr>
 									<td className=' fw-bold'>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
@@ -2008,27 +2457,27 @@ export const Ubo4FormAdvance = (props) => {
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
@@ -2049,9 +2498,17 @@ export const Ubo4FormAdvance = (props) => {
 										</Form.Group>
 									</td>
 									<td>
-										<Form.Group className='' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100342342}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
 									</td>
 									<td className='custom-width-18'>
 										<Form.Group
@@ -2062,17 +2519,17 @@ export const Ubo4FormAdvance = (props) => {
 									</td>
 									<td>
 										<Form.Group className='' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td className='custom-width-13'>
@@ -2084,9 +2541,17 @@ export const Ubo4FormAdvance = (props) => {
 									</td>
 
 									<td>
-										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100342342}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
 									</td>
 								</tr>
 							</tbody>
@@ -2104,23 +2569,31 @@ export const Ubo4FormAdvance = (props) => {
 										</Form.Group>
 									</td>
 									<td>
+										<CurrencyInput
+											className='input-field-control '
+											id='input-example'
+											name='input-name'
+											placeholder='100'
+											defaultValue={100342342}
+											allowDecimals={true}
+											decimalsLimit={2}
+											disableGroupSeparators={true}
+											onValueChange={(value, name) => console.log(value, name)}
+										/>
+									</td>
+									<td>
 										<Form.Group className='' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='' controlId='validationCustom02'>
-											<Form.Control required type='number' />
-										</Form.Group>
-									</td>
-									<td>
-										<Form.Group className='' controlId='validationCustom02'>
-											<Form.Control placeholder='73' required type='number' />
+											<Form.Control placeholder='73' required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
@@ -2128,7 +2601,7 @@ export const Ubo4FormAdvance = (props) => {
 						</Table>
 					</Col>
 				</Row>
-				<Row>
+				<Row className='px-4'>
 					<Col sm={3} xs={6}>
 						<Row className='text-center px-1'>
 							<Form.Group
@@ -2143,13 +2616,20 @@ export const Ubo4FormAdvance = (props) => {
 									<div>DATE</div>
 								</p>
 							</Form.Group>
-							<Form.Group
-								className='px-1 mb-1'
-								as={Col}
-								xs='6'
-								controlId='validationCustom02'>
-								<Form.Control required type='date' />
-							</Form.Group>
+							<Col xs={6} className='px-1'>
+								<CurrencyInput
+									className='input-field-control mb-1 '
+									id='input-example'
+									name='input-name'
+									placeholder='100'
+									defaultValue={100342342}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
+
 							<Form.Group
 								className='px-1'
 								as={Col}
@@ -2169,13 +2649,19 @@ export const Ubo4FormAdvance = (props) => {
 									<div>DATE</div>
 								</p>
 							</Form.Group>
-							<Form.Group
-								className='px-1'
-								as={Col}
-								xs='6'
-								controlId='validationCustom02'>
-								<Form.Control required type='date' />
-							</Form.Group>
+							<Col xs={6} className='px-1'>
+								<CurrencyInput
+									className='input-field-control mb-1 '
+									id='input-example'
+									name='input-name'
+									placeholder='100'
+									defaultValue={100342342}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
 							<Form.Group
 								className='px-1'
 								as={Col}
@@ -2199,13 +2685,19 @@ export const Ubo4FormAdvance = (props) => {
 									<div>DATE</div>
 								</p>
 							</Form.Group>
-							<Form.Group
-								className='px-1 mb-1'
-								as={Col}
-								xs='6'
-								controlId='validationCustom02'>
-								<Form.Control required type='date' />
-							</Form.Group>
+							<Col xs={6} className='px-1'>
+								<CurrencyInput
+									className='input-field-control mb-1 '
+									id='input-example'
+									name='input-name'
+									placeholder='100'
+									defaultValue={100342342}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
 							<Form.Group
 								className='px-1'
 								as={Col}
@@ -2225,13 +2717,19 @@ export const Ubo4FormAdvance = (props) => {
 									<div>DATE</div>
 								</p>
 							</Form.Group>
-							<Form.Group
-								className='px-1'
-								as={Col}
-								xs='6'
-								controlId='validationCustom02'>
-								<Form.Control required type='date' />
-							</Form.Group>
+							<Col xs={6} className='px-1'>
+								<CurrencyInput
+									className='input-field-control mb-1 '
+									id='input-example'
+									name='input-name'
+									placeholder='100'
+									defaultValue={100342342}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
 							<Form.Group
 								className='px-1'
 								as={Col}
@@ -2255,13 +2753,19 @@ export const Ubo4FormAdvance = (props) => {
 									<div>DATE</div>
 								</p>
 							</Form.Group>
-							<Form.Group
-								className='px-1 mb-1'
-								as={Col}
-								xs='6'
-								controlId='validationCustom02'>
-								<Form.Control required type='date' />
-							</Form.Group>
+							<Col xs={6} className='px-1'>
+								<CurrencyInput
+									className='input-field-control mb-1 '
+									id='input-example'
+									name='input-name'
+									placeholder='100'
+									defaultValue={100342342}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
 							<Form.Group
 								className='px-1'
 								as={Col}
@@ -2281,13 +2785,19 @@ export const Ubo4FormAdvance = (props) => {
 									<div>DATE</div>
 								</p>
 							</Form.Group>
-							<Form.Group
-								className='px-1'
-								as={Col}
-								xs='6'
-								controlId='validationCustom02'>
-								<Form.Control required type='date' />
-							</Form.Group>
+							<Col xs={6} className='px-1'>
+								<CurrencyInput
+									className='input-field-control mb-1 '
+									id='input-example'
+									name='input-name'
+									placeholder='100'
+									defaultValue={100342342}
+									allowDecimals={true}
+									decimalsLimit={2}
+									disableGroupSeparators={true}
+									onValueChange={(value, name) => console.log(value, name)}
+								/>
+							</Col>
 							<Form.Group
 								className='px-1'
 								as={Col}
@@ -2323,7 +2833,7 @@ export const Ubo4FormAdvance = (props) => {
 											</td>
 											<td>
 												<Form.Group className='' controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 											<td>
@@ -2335,12 +2845,12 @@ export const Ubo4FormAdvance = (props) => {
 											</td>
 											<td>
 												<Form.Group className='' controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 											<td>
 												<Form.Group className='' controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 										</tr>
@@ -2362,7 +2872,7 @@ export const Ubo4FormAdvance = (props) => {
 											</td>
 											<td>
 												<Form.Group className='' controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 											<td className=''>
@@ -2374,7 +2884,7 @@ export const Ubo4FormAdvance = (props) => {
 											</td>
 											<td>
 												<Form.Group className='' controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 										</tr>
@@ -2394,7 +2904,7 @@ export const Ubo4FormAdvance = (props) => {
 											</td>
 											<td>
 												<Form.Group className='' controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 											<td>
@@ -2406,12 +2916,12 @@ export const Ubo4FormAdvance = (props) => {
 											</td>
 											<td>
 												<Form.Group className='' controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 											<td>
 												<Form.Group className='' controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 										</tr>
@@ -2433,7 +2943,7 @@ export const Ubo4FormAdvance = (props) => {
 											</td>
 											<td>
 												<Form.Group className='' controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 											<td className=''>
@@ -2445,7 +2955,7 @@ export const Ubo4FormAdvance = (props) => {
 											</td>
 											<td>
 												<Form.Group className='' controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 										</tr>
@@ -2471,7 +2981,7 @@ export const Ubo4FormAdvance = (props) => {
 												<Form.Group
 													className='px-1'
 													controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 											<td>
@@ -2485,14 +2995,14 @@ export const Ubo4FormAdvance = (props) => {
 												<Form.Group
 													className='px-1'
 													controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 											<td>
 												<Form.Group
 													className='px-1'
 													controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 										</tr>
@@ -2516,7 +3026,7 @@ export const Ubo4FormAdvance = (props) => {
 												<Form.Group
 													className='px-1'
 													controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 											<td className=''>
@@ -2530,7 +3040,7 @@ export const Ubo4FormAdvance = (props) => {
 												<Form.Group
 													className='px-1'
 													controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 										</tr>
@@ -2552,7 +3062,7 @@ export const Ubo4FormAdvance = (props) => {
 												<Form.Group
 													className='px-1'
 													controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 											<td>
@@ -2566,14 +3076,14 @@ export const Ubo4FormAdvance = (props) => {
 												<Form.Group
 													className='px-1'
 													controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 											<td>
 												<Form.Group
 													className='px-1'
 													controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 										</tr>
@@ -2597,7 +3107,7 @@ export const Ubo4FormAdvance = (props) => {
 												<Form.Group
 													className='px-1'
 													controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 											<td className=''>
@@ -2611,7 +3121,7 @@ export const Ubo4FormAdvance = (props) => {
 												<Form.Group
 													className='px-1'
 													controlId='validationCustom02'>
-													<Form.Control required type='number' />
+													<Form.Control required type='text' />
 												</Form.Group>
 											</td>
 										</tr>
@@ -2637,7 +3147,7 @@ export const Ubo4FormAdvance = (props) => {
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
@@ -2645,14 +3155,14 @@ export const Ubo4FormAdvance = (props) => {
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
@@ -2672,17 +3182,17 @@ export const Ubo4FormAdvance = (props) => {
 									</td>
 									<td className=''>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
@@ -2691,17 +3201,17 @@ export const Ubo4FormAdvance = (props) => {
 									<td>b</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
@@ -2709,17 +3219,17 @@ export const Ubo4FormAdvance = (props) => {
 									<td>c</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
@@ -2727,17 +3237,17 @@ export const Ubo4FormAdvance = (props) => {
 									<td>d</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 									<td>
 										<Form.Group className='px-1' controlId='validationCustom02'>
-											<Form.Control required type='number' />
+											<Form.Control required type='text' />
 										</Form.Group>
 									</td>
 								</tr>
