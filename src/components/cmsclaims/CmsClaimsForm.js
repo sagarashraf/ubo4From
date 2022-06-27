@@ -536,7 +536,7 @@ export const CmsClaimsForm = (props) => {
 
 							<Col xs={12}>
 								<Row className='pt-1'>
-									<Form.Group as={Col} xs={12} controlId='formGroupEmail'>
+									<Form.Group as={Col} controlId='formGroupEmail'>
 										<Form.Label className=' '>
 											a. INSURED'S BIRTH DATE
 										</Form.Label>
@@ -576,7 +576,6 @@ export const CmsClaimsForm = (props) => {
 									<Form.Group
 										className='px-1'
 										as={Col}
-										xs={12}
 										controlId='formGroupEmail'>
 										<Form.Label className=''>SEX</Form.Label>
 										<Form.Select
