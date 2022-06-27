@@ -2601,7 +2601,7 @@ export const Ubo4FormAdvance = (props) => {
 						</Table>
 					</Col>
 				</Row>
-				<Row className='px-4'>
+				<Row>
 					<Col sm={3} xs={6}>
 						<Row className='text-center px-1'>
 							<Form.Group
