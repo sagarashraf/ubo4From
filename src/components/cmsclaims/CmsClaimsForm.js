@@ -198,53 +198,57 @@ export const CmsClaimsForm = (props) => {
 						</Form.Group>
 					</Col>
 					<Col sm={4}>
-						<Row className='pt-1'>
-							<Form.Group className='px-1' as={Col} controlId='formGroupEmail'>
-								<Form.Label className='form-label-design '>
-									3 .PATIENT'S BIRTH DATE
-								</Form.Label>
-								<div className='d-flex'>
+						<Row>
+							<Col sm={6} xs={12} className='px-1 pt-1'>
+								<Form.Group className='px-1' controlId='formGroupEmail'>
+									<Form.Label className='form-label-design '>
+										3 .PATIENT'S BIRTH DATE
+									</Form.Label>
+									<div className='d-flex'>
+										<Form.Select
+											style={{ fontSize: "14px" }}
+											aria-label='Default select example'>
+											<option selected disabled>
+												DD
+											</option>
+											{DAYLIST.map((item, i) => {
+												return <option>{item}</option>;
+											})}
+										</Form.Select>
+										<Form.Select
+											style={{ fontSize: "14px" }}
+											aria-label='Default select example'>
+											<option selected disabled>
+												MM
+											</option>
+											{MONTHLIST.map((item, i) => {
+												return <option>{item}</option>;
+											})}
+										</Form.Select>
+										<Form.Select
+											style={{ fontSize: "14px" }}
+											aria-label='Default select example'>
+											<option selected disabled>
+												YY
+											</option>
+											{YEARLIST.map((item, i) => {
+												return <option>{item}</option>;
+											})}
+										</Form.Select>
+									</div>
+								</Form.Group>
+							</Col>
+							<Col sm={6} xs={12} className='px-1 pt-1'>
+								<Form.Group className='px-1' controlId='formGroupEmail'>
+									<Form.Label className='form-label-design'>SEX</Form.Label>
 									<Form.Select
-										style={{ fontSize: "14px" }}
+										style={{ fontSize: "13px" }}
 										aria-label='Default select example'>
-										<option selected disabled>
-											DD
-										</option>
-										{DAYLIST.map((item, i) => {
-											return <option>{item}</option>;
-										})}
+										<option>MALE</option>
+										<option>FEMALE</option>
 									</Form.Select>
-									<Form.Select
-										style={{ fontSize: "14px" }}
-										aria-label='Default select example'>
-										<option selected disabled>
-											MM
-										</option>
-										{MONTHLIST.map((item, i) => {
-											return <option>{item}</option>;
-										})}
-									</Form.Select>
-									<Form.Select
-										style={{ fontSize: "14px" }}
-										aria-label='Default select example'>
-										<option selected disabled>
-											YY
-										</option>
-										{YEARLIST.map((item, i) => {
-											return <option>{item}</option>;
-										})}
-									</Form.Select>
-								</div>
-							</Form.Group>
-							<Form.Group className='px-1' as={Col} controlId='formGroupEmail'>
-								<Form.Label className='form-label-design'>SEX</Form.Label>
-								<Form.Select
-									style={{ fontSize: "13px" }}
-									aria-label='Default select example'>
-									<option>MALE</option>
-									<option>FEMALE</option>
-								</Form.Select>
-							</Form.Group>
+								</Form.Group>
+							</Col>
 						</Row>
 					</Col>
 					<Col sm={4}>
