@@ -701,6 +701,1134 @@ export const CmsClaimsForm = (props) => {
 						</Row>
 					</Col>
 				</Row>
+				<hr />
+				<Row>
+					<Col sm={4} xs={12}>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label>b. RESERVED FOR NUCC USE</Form.Label>
+							<div className='d-flex'>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										DD
+									</option>
+									{DAYLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										MM
+									</option>
+									{MONTHLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										YY
+									</option>
+									{YEARLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+							</div>
+							<div className='d-flex'>
+								<Form.Label className='w-25 pt-1'>Qual:</Form.Label>
+								<Form.Control
+									className='w-100'
+									type='text'
+									placeholder='QUAL'
+								/>
+							</div>
+						</Form.Group>
+					</Col>
+					<Col sm={4} xs={12}>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label>b. RESERVED FOR NUCC USE</Form.Label>
+							<div className='d-flex'>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										DD
+									</option>
+									{DAYLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										MM
+									</option>
+									{MONTHLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										YY
+									</option>
+									{YEARLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+							</div>
+							<div className='d-flex'>
+								<Form.Label className='w-25 pt-1'>Qual:</Form.Label>
+								<Form.Control
+									className='w-100'
+									type='text'
+									placeholder='QUAL'
+								/>
+							</div>
+						</Form.Group>
+					</Col>
+					<Col sm={4} xs={12}>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label>c. RESERVED FOR NUCC USE</Form.Label>
+							<div className='d-flex'>
+								<Form.Label className='w-75 pt-1'>FROM :</Form.Label>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										DD
+									</option>
+									{DAYLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										MM
+									</option>
+									{MONTHLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										YY
+									</option>
+									{YEARLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+							</div>
+							<div className='d-flex'>
+								<Form.Label className='w-75 pt-1'>To :</Form.Label>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										DD
+									</option>
+									{DAYLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										MM
+									</option>
+									{MONTHLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										YY
+									</option>
+									{YEARLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+							</div>
+						</Form.Group>
+					</Col>
+				</Row>
+				<hr />
+				<Row>
+					<Col sm={4} xs={12}>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label>b. RESERVED FOR NUCC USE</Form.Label>
+
+							<Form.Control className='w-100' type='text' placeholder='QUAL' />
+						</Form.Group>
+					</Col>
+					<Col sm={4} xs={12}>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label>b. RESERVED FOR NUCC USE</Form.Label>
+
+							<div className='d-flex'>
+								<Form.Label className='w-25 pt-1'>Qual:</Form.Label>
+								<Form.Control className='w-25' type='text' placeholder='QUAL' />
+								<Form.Control
+									className='w-100'
+									type='text'
+									placeholder='QUAL'
+								/>
+							</div>
+							<div className='d-flex'>
+								<Form.Label className='w-25 pt-1'>Qual:</Form.Label>
+								<Form.Control className='w-25' type='text' placeholder='QUAL' />
+								<Form.Control
+									className='w-100'
+									type='text'
+									placeholder='QUAL'
+								/>
+							</div>
+						</Form.Group>
+					</Col>
+					<Col sm={4} xs={12}>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label>c. RESERVED FOR NUCC USE</Form.Label>
+							<div className='d-flex'>
+								<Form.Label className='w-75 pt-1'>FROM :</Form.Label>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										DD
+									</option>
+									{DAYLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										MM
+									</option>
+									{MONTHLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										YY
+									</option>
+									{YEARLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+							</div>
+							<div className='d-flex'>
+								<Form.Label className='w-75 pt-1'>To :</Form.Label>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										DD
+									</option>
+									{DAYLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										MM
+									</option>
+									{MONTHLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+								<Form.Select
+									style={{ fontSize: "14px" }}
+									aria-label='Default select example'>
+									<option selected disabled>
+										YY
+									</option>
+									{YEARLIST.map((item, i) => {
+										return <option>{item}</option>;
+									})}
+								</Form.Select>
+							</div>
+						</Form.Group>
+					</Col>
+				</Row>
+				<hr />
+				<Row>
+					<Col sm={8} xs={12}>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label>b. RESERVED FOR NUCC USE</Form.Label>
+
+							<Form.Control className='w-100' type='text' placeholder='QUAL' />
+						</Form.Group>
+					</Col>
+					<Col sm={2} xs={12}>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label>b. RESERVED FOR?</Form.Label>
+							<div className='d-flex justify-content-around'>
+								<Form.Group id='formGridCheckbox'>
+									<Form.Check
+										className='font-italic'
+										type='checkbox'
+										label='YES'
+									/>
+								</Form.Group>
+								<Form.Group id='formGridCheckbox '>
+									<Form.Check
+										className='font-italic'
+										type='checkbox'
+										label='No'
+									/>
+								</Form.Group>
+							</div>
+						</Form.Group>
+					</Col>
+					<Col sm={2} xs={12}>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label>Charges</Form.Label>
+
+							<Form.Control className='w-100' type='text' placeholder='QUAL' />
+						</Form.Group>
+					</Col>
+				</Row>
+				<hr />
+				<Row>
+					<Col sm={8} xs={12}>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label>Charges</Form.Label>
+
+							<Row>
+								<Col sm={6} xs={12}>
+									<Row>
+										<Col sm={6} xs={12}>
+											{" "}
+											<Form.Group
+												as={Row}
+												className='mb-3'
+												controlId='formPlaintextEmail'>
+												<Form.Label column sm='3'>
+													Email
+												</Form.Label>
+												<Col sm='9'>
+													<Form.Control />
+												</Col>
+											</Form.Group>
+											<Form.Group
+												as={Row}
+												className='mb-3'
+												controlId='formPlaintextEmail'>
+												<Form.Label column sm='3'>
+													Email
+												</Form.Label>
+												<Col sm='9'>
+													<Form.Control />
+												</Col>
+											</Form.Group>
+											<Form.Group
+												as={Row}
+												className='mb-3'
+												controlId='formPlaintextEmail'>
+												<Form.Label column sm='3'>
+													Email
+												</Form.Label>
+												<Col sm='9'>
+													<Form.Control />
+												</Col>
+											</Form.Group>
+										</Col>
+										<Col sm={6} xs={12}>
+											{" "}
+											<Form.Group
+												as={Row}
+												className='mb-3'
+												controlId='formPlaintextEmail'>
+												<Form.Label column sm='3'>
+													Email
+												</Form.Label>
+												<Col sm='9'>
+													<Form.Control />
+												</Col>
+											</Form.Group>
+											<Form.Group
+												as={Row}
+												className='mb-3'
+												controlId='formPlaintextEmail'>
+												<Form.Label column sm='3'>
+													Email
+												</Form.Label>
+												<Col sm='9'>
+													<Form.Control />
+												</Col>
+											</Form.Group>
+											<Form.Group
+												as={Row}
+												className='mb-3'
+												controlId='formPlaintextEmail'>
+												<Form.Label column sm='3'>
+													Email
+												</Form.Label>
+												<Col sm='9'>
+													<Form.Control />
+												</Col>
+											</Form.Group>
+										</Col>
+									</Row>
+								</Col>
+								<Col sm={6} xs={12}>
+									<Row>
+										<Col sm={6} xs={12}>
+											{" "}
+											<Form.Group
+												as={Row}
+												className='mb-3'
+												controlId='formPlaintextEmail'>
+												<Form.Label column sm='3'>
+													Email
+												</Form.Label>
+												<Col sm='9'>
+													<Form.Control />
+												</Col>
+											</Form.Group>
+											<Form.Group
+												as={Row}
+												className='mb-3'
+												controlId='formPlaintextEmail'>
+												<Form.Label column sm='3'>
+													Email
+												</Form.Label>
+												<Col sm='9'>
+													<Form.Control />
+												</Col>
+											</Form.Group>
+											<Form.Group
+												as={Row}
+												className='mb-3'
+												controlId='formPlaintextEmail'>
+												<Form.Label column sm='3'>
+													Email
+												</Form.Label>
+												<Col sm='9'>
+													<Form.Control />
+												</Col>
+											</Form.Group>
+										</Col>
+										<Col sm={6} xs={12}>
+											{" "}
+											<Form.Group
+												as={Row}
+												className='mb-3'
+												controlId='formPlaintextEmail'>
+												<Form.Label column sm='3'>
+													Email
+												</Form.Label>
+												<Col sm='9'>
+													<Form.Control />
+												</Col>
+											</Form.Group>
+											<Form.Group
+												as={Row}
+												className='mb-3'
+												controlId='formPlaintextEmail'>
+												<Form.Label column sm='3'>
+													Email
+												</Form.Label>
+												<Col sm='9'>
+													<Form.Control />
+												</Col>
+											</Form.Group>
+											<Form.Group
+												as={Row}
+												className='mb-3'
+												controlId='formPlaintextEmail'>
+												<Form.Label column sm='3'>
+													Email
+												</Form.Label>
+												<Col sm='9'>
+													<Form.Control />
+												</Col>
+											</Form.Group>
+										</Col>
+									</Row>
+								</Col>
+							</Row>
+						</Form.Group>
+					</Col>
+					<Col sm={4} xs={12}>
+						<Form.Group>
+							<Row>
+								<Col sm={6} xs={12}>
+									<Form.Group className='' controlId='formGroupEmail'>
+										<Form.Label>b. RESERVED FOR?</Form.Label>
+										<Form.Control
+											className='w-100'
+											type='text'
+											placeholder='QUAL'
+										/>
+									</Form.Group>
+								</Col>
+								<Col sm={6} xs={12}>
+									<Form.Group className='' controlId='formGroupEmail'>
+										<Form.Label>Charges</Form.Label>
+
+										<Form.Control
+											className='w-100'
+											type='text'
+											placeholder='QUAL'
+										/>
+									</Form.Group>
+								</Col>
+							</Row>
+						</Form.Group>
+
+						<Form.Group>
+							<Row className='mt-4 pt-3'>
+								<Col sm={12} xs={12}>
+									<Form.Group className='' controlId='formGroupEmail'>
+										<Form.Label>Charges</Form.Label>
+
+										<Form.Control
+											className='w-100'
+											type='text'
+											placeholder='QUAL'
+										/>
+									</Form.Group>
+								</Col>
+							</Row>
+						</Form.Group>
+					</Col>
+				</Row>
+				<hr />
+				<Row>
+					<Col sm={6} xs={12}>
+						<Row>
+							<Col sm={8} xs={12}>
+								<Form.Group className='' controlId='formGroupEmail'>
+									<Form.Label>Charges</Form.Label>
+									<Row>
+										<Col style={{ paddingRight: "2px" }} sm={6} xs={12}>
+											<Form.Group className='' controlId='formGroupEmail'>
+												<Form.Label>From</Form.Label>
+
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+											</Form.Group>
+										</Col>
+										<Col style={{ paddingLeft: "2px" }} sm={6} xs={12}>
+											<Form.Group className='' controlId='formGroupEmail'>
+												<Form.Label>From</Form.Label>
+
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='date'
+													placeholder='QUAL'
+												/>
+											</Form.Group>
+										</Col>
+									</Row>
+								</Form.Group>
+							</Col>
+							<Col sm={2} xs={12}>
+								<Form.Group className='' controlId='formGroupEmail'>
+									<Form.Label>B.</Form.Label>
+									<Row>
+										<Col
+											style={{ paddingLeft: "2px", paddingRight: "2px" }}
+											sm={12}
+											xs={12}>
+											<Form.Group className='' controlId='formGroupEmail'>
+												<Form.Label>ferwer</Form.Label>
+
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+											</Form.Group>
+										</Col>
+									</Row>
+								</Form.Group>
+							</Col>
+							<Col sm={2} xs={12}>
+								<Form.Group className='' controlId='formGroupEmail'>
+									<Form.Label>B.</Form.Label>
+									<Row>
+										<Col
+											style={{ paddingLeft: "2px", paddingRight: "2px" }}
+											sm={12}
+											xs={12}>
+											<Form.Group className='' controlId='formGroupEmail'>
+												<Form.Label>ferwer</Form.Label>
+
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+											</Form.Group>
+										</Col>
+									</Row>
+								</Form.Group>
+							</Col>
+						</Row>
+					</Col>
+					<Col sm={6} xs={12}>
+						<Row>
+							<Col sm={3} xs={12}>
+								<Form.Group className='' controlId='formGroupEmail'>
+									<Form.Label>B.</Form.Label>
+									<Row>
+										<Col
+											style={{ paddingLeft: "2px", paddingRight: "2px" }}
+											sm={12}
+											xs={12}>
+											<Form.Group className='' controlId='formGroupEmail'>
+												<Form.Label>ferwer</Form.Label>
+
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+											</Form.Group>
+										</Col>
+									</Row>
+								</Form.Group>
+							</Col>
+							<Col sm={2} xs={12}>
+								<Form.Group className='' controlId='formGroupEmail'>
+									<Form.Label>B.</Form.Label>
+									<Row>
+										<Col
+											style={{ paddingLeft: "2px", paddingRight: "2px" }}
+											sm={12}
+											xs={12}>
+											<Form.Group className='' controlId='formGroupEmail'>
+												<Form.Label>ferwer</Form.Label>
+
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+											</Form.Group>
+										</Col>
+									</Row>
+								</Form.Group>
+							</Col>
+							<Col sm={2} xs={12}>
+								<Form.Group className='' controlId='formGroupEmail'>
+									<Form.Label>B.</Form.Label>
+									<Row>
+										<Col
+											style={{ paddingLeft: "2px", paddingRight: "2px" }}
+											sm={12}
+											xs={12}>
+											<Form.Group className='' controlId='formGroupEmail'>
+												<Form.Label>ferwer</Form.Label>
+
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+											</Form.Group>
+										</Col>
+									</Row>
+								</Form.Group>
+							</Col>
+							<Col sm={2} xs={12}>
+								<Form.Group className='' controlId='formGroupEmail'>
+									<Form.Label>B.</Form.Label>
+									<Row>
+										<Col
+											style={{ paddingLeft: "2px", paddingRight: "2px" }}
+											sm={12}
+											xs={12}>
+											<Form.Group className='' controlId='formGroupEmail'>
+												<Form.Label>ferwer</Form.Label>
+
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+											</Form.Group>
+										</Col>
+									</Row>
+								</Form.Group>
+							</Col>
+							<Col sm={3} xs={12}>
+								<Form.Group className='' controlId='formGroupEmail'>
+									<Form.Label>B.</Form.Label>
+									<Row>
+										<Col
+											style={{ paddingLeft: "2px", paddingRight: "2px" }}
+											sm={12}
+											xs={12}>
+											<Form.Group className='' controlId='formGroupEmail'>
+												<Form.Label>ferwer</Form.Label>
+
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+												<Form.Control
+													className='w-100'
+													type='text'
+													placeholder='QUAL'
+												/>
+											</Form.Group>
+										</Col>
+									</Row>
+								</Form.Group>
+							</Col>
+						</Row>
+					</Col>
+				</Row>
+				<hr />
+				<Row>
+					<Col sm={4} xs={12}>
+						<Row>
+							<Col sm={8} xs={12}>
+								<Form.Group>
+									<Form.Label>ferwer</Form.Label>
+
+									<Form.Control
+										className='w-100'
+										type='text'
+										placeholder='QUAL'
+									/>
+								</Form.Group>
+							</Col>
+							<Col className='text-center' sm={2} xs={6}>
+								<Form.Group>
+									<Form.Label>ferwer</Form.Label>
+
+									<Form.Group className='mt-2' id='formGridCheckbox'>
+										<Form.Check className='font-italic' type='checkbox' />
+									</Form.Group>
+								</Form.Group>
+							</Col>
+							<Col className='text-center' sm={2} xs={6}>
+								<Form.Group>
+									<Form.Label>ferwer</Form.Label>
+
+									<Form.Group className='mt-2' id='formGridCheckbox'>
+										<Form.Check className='font-italic' type='checkbox' />
+									</Form.Group>
+								</Form.Group>
+							</Col>
+						</Row>
+					</Col>
+					<Col sm={3} xs={12}>
+						<Row>
+							<Col sm={8} xs={12}>
+								<Form.Group>
+									<Form.Label>ferwer</Form.Label>
+
+									<Form.Control
+										className='w-100'
+										type='text'
+										placeholder='QUAL'
+									/>
+								</Form.Group>
+							</Col>
+							<Col style={{ paddingRight: "2px" }} sm={4} xs={12}>
+								<Form.Group>
+									<Form.Label>ferwer</Form.Label>
+
+									<div className='d-flex flex-row '>
+										<Form.Group className='mt-2' id='formGridCheckbox'>
+											<Form.Check
+												className='font-italic'
+												type='checkbox'
+												label='YES'
+											/>
+										</Form.Group>
+										<Form.Group className='mt-2' id='formGridCheckbox'>
+											<Form.Check
+												className='font-italic'
+												type='checkbox'
+												label='NO'
+											/>
+										</Form.Group>
+									</div>
+								</Form.Group>
+							</Col>
+						</Row>
+					</Col>
+					<Col sm={5} xs={12}>
+						<Row>
+							<Col sm={4} xs={12}>
+								<Form.Group className='' controlId='formGroupEmail'>
+									<Form.Label>10. IS PATIENT’S </Form.Label>
+									<Form.Control type='number' placeholder='123456' />
+								</Form.Group>
+							</Col>
+							<Col sm={4} xs={12}>
+								<Form.Group className='' controlId='formGroupEmail'>
+									<Form.Label>10. IS PATIENT’S </Form.Label>
+									<Form.Control type='number' placeholder='123456' />
+								</Form.Group>
+							</Col>
+							<Col sm={4} xs={12}>
+								<Form.Group className='' controlId='formGroupEmail'>
+									<Form.Label>10. IS PATIENT’S </Form.Label>
+									<Form.Control type='number' placeholder='123456' />
+								</Form.Group>
+							</Col>
+						</Row>
+					</Col>
+				</Row>
+				<hr />
+				<Row>
+					<Col sm={4} xs={12}>
+						<Form.Group>
+							<Form.Label>ferwer</Form.Label>
+
+							<Row>
+								<Col sm={6} xs={12}>
+									<Form.Group
+										as={Row}
+										className='mb-3'
+										controlId='formPlaintextEmail'>
+										<Form.Label column sm='3'>
+											Sign:
+										</Form.Label>
+										<Col sm='9'>
+											<Form.Control className='w-100' />
+										</Col>
+									</Form.Group>
+								</Col>
+								<Col sm={6} xs={12}>
+									<Form.Group
+										as={Row}
+										className='mb-3'
+										controlId='formPlaintextEmail'>
+										<Form.Label column sm='3'>
+											Date:
+										</Form.Label>
+										<Col sm='9'>
+											<Form.Control className='w-100' type='date' />
+										</Col>
+									</Form.Group>
+								</Col>
+							</Row>
+						</Form.Group>
+					</Col>
+					<Col sm={4} xs={12}>
+						<Form.Group>
+							<Form.Label>ferwer</Form.Label>
+							<Form.Control as='textarea' rows={7} placeholder='123456' />
+
+							<Row className='mt-2'>
+								<Col sm={6} xs={12}>
+									<Form.Group
+										as={Row}
+										className='mb-3'
+										controlId='formPlaintextEmail'>
+										<Form.Label column sm='2'>
+											a.
+										</Form.Label>
+										<Col sm='10'>
+											<Form.Control />
+										</Col>
+									</Form.Group>
+								</Col>
+								<Col sm={6} xs={12}>
+									<Form.Group
+										as={Row}
+										className='mb-3'
+										controlId='formPlaintextEmail'>
+										<Form.Label column sm='2'>
+											b.
+										</Form.Label>
+										<Col sm='10'>
+											<Form.Control type='text' />
+										</Col>
+									</Form.Group>
+								</Col>
+							</Row>
+						</Form.Group>
+					</Col>
+					<Col sm={4} xs={12}>
+						<Form.Group>
+							<Form.Label>ferwer</Form.Label>
+							<Form.Control className='mb-2' type='text' placeholder='phone#' />
+							<Form.Control as='textarea' rows={5} placeholder='123456' />
+
+							<Row className='mt-2'>
+								<Col sm={6} xs={12}>
+									<Form.Group
+										as={Row}
+										className='mb-3'
+										controlId='formPlaintextEmail'>
+										<Form.Label column sm='2'>
+											a.
+										</Form.Label>
+										<Col sm='10'>
+											<Form.Control className='w-100' />
+										</Col>
+									</Form.Group>
+								</Col>
+								<Col sm={6} xs={12}>
+									<Form.Group
+										as={Row}
+										className='mb-3'
+										controlId='formPlaintextEmail'>
+										<Form.Label column sm='2'>
+											b.
+										</Form.Label>
+										<Col sm='10'>
+											<Form.Control type='text' />
+										</Col>
+									</Form.Group>
+								</Col>
+							</Row>
+						</Form.Group>
+					</Col>
+				</Row>
 			</div>
 		</Container>
 	);
