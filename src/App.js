@@ -18,8 +18,8 @@ export const App = (props) => {
 				<Routes>
 					{/* <Route path='/avd' element={<Ubo4Form />} />
 					<Route path='table' element={<TableForm />} /> */}
-					<Route path='/' element={<Ubo4FormAdvance />} />
-					<Route path='cms' element={<CmsClaimsForm />} />
+					<Route path='/' element={<CmsClaimsForm />} />
+					<Route path='/ubo4' element={<Ubo4FormAdvance />} />
 				</Routes>
 			</BrowserRouter>
 		</div>

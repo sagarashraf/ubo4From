@@ -705,7 +705,9 @@ export const CmsClaimsForm = (props) => {
 				<Row>
 					<Col sm={4} xs={12}>
 						<Form.Group className='' controlId='formGroupEmail'>
-							<Form.Label>b. RESERVED FOR NUCC USE</Form.Label>
+							<Form.Label>
+								14. CURRENT ILLNESS, INJURY, or PREGNANCY (LMP)
+							</Form.Label>
 							<div className='d-flex'>
 								<Form.Select
 									style={{ fontSize: "14px" }}
@@ -738,7 +740,7 @@ export const CmsClaimsForm = (props) => {
 									})}
 								</Form.Select>
 							</div>
-							<div className='d-flex'>
+							<div className='d-flex mt-4'>
 								<Form.Label className='w-25 pt-1'>Qual:</Form.Label>
 								<Form.Control
 									className='w-100'
@@ -750,7 +752,7 @@ export const CmsClaimsForm = (props) => {
 					</Col>
 					<Col sm={4} xs={12}>
 						<Form.Group className='' controlId='formGroupEmail'>
-							<Form.Label>b. RESERVED FOR NUCC USE</Form.Label>
+							<Form.Label>15. OTHER DATE</Form.Label>
 							<div className='d-flex'>
 								<Form.Select
 									style={{ fontSize: "14px" }}
@@ -783,7 +785,7 @@ export const CmsClaimsForm = (props) => {
 									})}
 								</Form.Select>
 							</div>
-							<div className='d-flex'>
+							<div className='d-flex mt-4'>
 								<Form.Label className='w-25 pt-1'>Qual:</Form.Label>
 								<Form.Control
 									className='w-100'
@@ -795,8 +797,10 @@ export const CmsClaimsForm = (props) => {
 					</Col>
 					<Col sm={4} xs={12}>
 						<Form.Group className='' controlId='formGroupEmail'>
-							<Form.Label>c. RESERVED FOR NUCC USE</Form.Label>
-							<div className='d-flex'>
+							<Form.Label>
+								16. DATES PATIENT UNABLE TO WORK IN CURRENT OCCUPATION
+							</Form.Label>
+							<div className='d-flex mb-1'>
 								<Form.Label className='w-75 pt-1'>FROM :</Form.Label>
 								<Form.Select
 									style={{ fontSize: "14px" }}
@@ -869,17 +873,21 @@ export const CmsClaimsForm = (props) => {
 				<Row>
 					<Col sm={4} xs={12}>
 						<Form.Group className='' controlId='formGroupEmail'>
-							<Form.Label>b. RESERVED FOR NUCC USE</Form.Label>
+							<Form.Label>
+								17. NAME OF REFERRING PROVIDER / OTHER SOURCE
+							</Form.Label>
 
-							<Form.Control className='w-100' type='text' placeholder='QUAL' />
+							<Form.Control
+								className='w-100 mt-2'
+								type='text'
+								placeholder='QUAL'
+							/>
 						</Form.Group>
 					</Col>
 					<Col sm={4} xs={12}>
 						<Form.Group className='' controlId='formGroupEmail'>
-							<Form.Label>b. RESERVED FOR NUCC USE</Form.Label>
-
 							<div className='d-flex'>
-								<Form.Label className='w-25 pt-1'>Qual:</Form.Label>
+								<Form.Label className='w-25 pt-1'>17a:</Form.Label>
 								<Form.Control className='w-25' type='text' placeholder='QUAL' />
 								<Form.Control
 									className='w-100'
@@ -887,9 +895,9 @@ export const CmsClaimsForm = (props) => {
 									placeholder='QUAL'
 								/>
 							</div>
-							<div className='d-flex'>
-								<Form.Label className='w-25 pt-1'>Qual:</Form.Label>
-								<Form.Control className='w-25' type='text' placeholder='QUAL' />
+							<div className='d-flex mt-2'>
+								<Form.Label className='w-25 pt-1'>17b</Form.Label>
+								<Form.Label className='w-25 pt-1'>NPI</Form.Label>
 								<Form.Control
 									className='w-100'
 									type='text'
@@ -900,8 +908,10 @@ export const CmsClaimsForm = (props) => {
 					</Col>
 					<Col sm={4} xs={12}>
 						<Form.Group className='' controlId='formGroupEmail'>
-							<Form.Label>c. RESERVED FOR NUCC USE</Form.Label>
-							<div className='d-flex'>
+							<Form.Label>
+								18. HOSPITALIZATION DATES RELATED TO CURRENT SERVICES
+							</Form.Label>
+							<div className='d-flex mb-1'>
 								<Form.Label className='w-75 pt-1'>FROM :</Form.Label>
 								<Form.Select
 									style={{ fontSize: "14px" }}
@@ -974,14 +984,19 @@ export const CmsClaimsForm = (props) => {
 				<Row>
 					<Col sm={8} xs={12}>
 						<Form.Group className='' controlId='formGroupEmail'>
-							<Form.Label>b. RESERVED FOR NUCC USE</Form.Label>
+							<Form.Label>
+								19. ADDITIONAL CLAIM INFORMATION
+								<span style={{ fontSize: "11px" }}>
+									(Designated by NUCC)
+								</span>{" "}
+							</Form.Label>
 
 							<Form.Control className='w-100' type='text' placeholder='QUAL' />
 						</Form.Group>
 					</Col>
 					<Col sm={2} xs={12}>
 						<Form.Group className='' controlId='formGroupEmail'>
-							<Form.Label>b. RESERVED FOR?</Form.Label>
+							<Form.Label>20. OUTSIDE LAB?</Form.Label>
 							<div className='d-flex justify-content-around'>
 								<Form.Group id='formGridCheckbox'>
 									<Form.Check
@@ -1002,7 +1017,7 @@ export const CmsClaimsForm = (props) => {
 					</Col>
 					<Col sm={2} xs={12}>
 						<Form.Group className='' controlId='formGroupEmail'>
-							<Form.Label>Charges</Form.Label>
+							<Form.Label>$ CHARGES</Form.Label>
 
 							<Form.Control className='w-100' type='text' placeholder='QUAL' />
 						</Form.Group>
@@ -1012,7 +1027,10 @@ export const CmsClaimsForm = (props) => {
 				<Row>
 					<Col sm={8} xs={12}>
 						<Form.Group className='' controlId='formGroupEmail'>
-							<Form.Label>Charges</Form.Label>
+							<Form.Label>
+								21. DIAGNOSIS OR NATURE OF ILLNESS OR INJURY Relate A-L to
+								service line below (24E)
+							</Form.Label>
 
 							<Row>
 								<Col sm={6} xs={12}>
@@ -1024,7 +1042,7 @@ export const CmsClaimsForm = (props) => {
 												className='mb-3'
 												controlId='formPlaintextEmail'>
 												<Form.Label column sm='3'>
-													Email
+													A.
 												</Form.Label>
 												<Col sm='9'>
 													<Form.Control />
@@ -1035,7 +1053,7 @@ export const CmsClaimsForm = (props) => {
 												className='mb-3'
 												controlId='formPlaintextEmail'>
 												<Form.Label column sm='3'>
-													Email
+													E.
 												</Form.Label>
 												<Col sm='9'>
 													<Form.Control />
@@ -1046,7 +1064,7 @@ export const CmsClaimsForm = (props) => {
 												className='mb-3'
 												controlId='formPlaintextEmail'>
 												<Form.Label column sm='3'>
-													Email
+													I.
 												</Form.Label>
 												<Col sm='9'>
 													<Form.Control />
@@ -1060,7 +1078,7 @@ export const CmsClaimsForm = (props) => {
 												className='mb-3'
 												controlId='formPlaintextEmail'>
 												<Form.Label column sm='3'>
-													Email
+													B.
 												</Form.Label>
 												<Col sm='9'>
 													<Form.Control />
@@ -1071,7 +1089,7 @@ export const CmsClaimsForm = (props) => {
 												className='mb-3'
 												controlId='formPlaintextEmail'>
 												<Form.Label column sm='3'>
-													Email
+													F.
 												</Form.Label>
 												<Col sm='9'>
 													<Form.Control />
@@ -1082,7 +1100,7 @@ export const CmsClaimsForm = (props) => {
 												className='mb-3'
 												controlId='formPlaintextEmail'>
 												<Form.Label column sm='3'>
-													Email
+													J.
 												</Form.Label>
 												<Col sm='9'>
 													<Form.Control />
@@ -1100,7 +1118,7 @@ export const CmsClaimsForm = (props) => {
 												className='mb-3'
 												controlId='formPlaintextEmail'>
 												<Form.Label column sm='3'>
-													Email
+													C.
 												</Form.Label>
 												<Col sm='9'>
 													<Form.Control />
@@ -1111,7 +1129,7 @@ export const CmsClaimsForm = (props) => {
 												className='mb-3'
 												controlId='formPlaintextEmail'>
 												<Form.Label column sm='3'>
-													Email
+													G.
 												</Form.Label>
 												<Col sm='9'>
 													<Form.Control />
@@ -1122,7 +1140,7 @@ export const CmsClaimsForm = (props) => {
 												className='mb-3'
 												controlId='formPlaintextEmail'>
 												<Form.Label column sm='3'>
-													Email
+													K.
 												</Form.Label>
 												<Col sm='9'>
 													<Form.Control />
@@ -1136,7 +1154,7 @@ export const CmsClaimsForm = (props) => {
 												className='mb-3'
 												controlId='formPlaintextEmail'>
 												<Form.Label column sm='3'>
-													Email
+													D.
 												</Form.Label>
 												<Col sm='9'>
 													<Form.Control />
@@ -1147,7 +1165,7 @@ export const CmsClaimsForm = (props) => {
 												className='mb-3'
 												controlId='formPlaintextEmail'>
 												<Form.Label column sm='3'>
-													Email
+													H.
 												</Form.Label>
 												<Col sm='9'>
 													<Form.Control />
@@ -1158,7 +1176,7 @@ export const CmsClaimsForm = (props) => {
 												className='mb-3'
 												controlId='formPlaintextEmail'>
 												<Form.Label column sm='3'>
-													Email
+													L.
 												</Form.Label>
 												<Col sm='9'>
 													<Form.Control />
@@ -1175,22 +1193,22 @@ export const CmsClaimsForm = (props) => {
 							<Row>
 								<Col sm={6} xs={12}>
 									<Form.Group className='' controlId='formGroupEmail'>
-										<Form.Label>b. RESERVED FOR?</Form.Label>
+										<Form.Label>22. RESUBMISSION CODE</Form.Label>
 										<Form.Control
 											className='w-100'
-											type='text'
-											placeholder='QUAL'
+											type='number'
+											placeholder='131241'
 										/>
 									</Form.Group>
 								</Col>
 								<Col sm={6} xs={12}>
 									<Form.Group className='' controlId='formGroupEmail'>
-										<Form.Label>Charges</Form.Label>
+										<Form.Label>ORIGINAL REF. NO.</Form.Label>
 
 										<Form.Control
 											className='w-100'
-											type='text'
-											placeholder='QUAL'
+											type='number'
+											placeholder='4235643'
 										/>
 									</Form.Group>
 								</Col>
@@ -1201,12 +1219,12 @@ export const CmsClaimsForm = (props) => {
 							<Row className='mt-4 pt-3'>
 								<Col sm={12} xs={12}>
 									<Form.Group className='' controlId='formGroupEmail'>
-										<Form.Label>Charges</Form.Label>
+										<Form.Label>23. PRIOR AUTHORIZATION NUMBER</Form.Label>
 
 										<Form.Control
 											className='w-100'
-											type='text'
-											placeholder='QUAL'
+											type='number'
+											placeholder='23553'
 										/>
 									</Form.Group>
 								</Col>
@@ -1216,443 +1234,270 @@ export const CmsClaimsForm = (props) => {
 				</Row>
 				<hr />
 				<Row>
-					<Col sm={6} xs={12}>
-						<Row>
-							<Col sm={8} xs={12}>
-								<Form.Group className='' controlId='formGroupEmail'>
-									<Form.Label>Charges</Form.Label>
-									<Row>
-										<Col style={{ paddingRight: "2px" }} sm={6} xs={12}>
-											<Form.Group className='' controlId='formGroupEmail'>
-												<Form.Label>From</Form.Label>
+					<Col sm={3} xs={12}>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label className='mb-4'>
+								24. A. DATE(S) OF SERVICE
+							</Form.Label>
+							<Row>
+								<Col style={{ paddingRight: "2px" }} sm={6} xs={12}>
+									<Form.Group className='' controlId='formGroupEmail'>
+										<Form.Label
+											style={{ fontSize: "11px", fontWeight: "bolder" }}>
+											From
+										</Form.Label>
 
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-											</Form.Group>
-										</Col>
-										<Col style={{ paddingLeft: "2px" }} sm={6} xs={12}>
-											<Form.Group className='' controlId='formGroupEmail'>
-												<Form.Label>From</Form.Label>
+										<Form.Control className='w-100 mb-1' type='date' />
+										<Form.Control className='w-100 mb-1' type='date' />
+										<Form.Control className='w-100 mb-1' type='date' />
+										<Form.Control className='w-100 mb-1' type='date' />
+										<Form.Control className='w-100 mb-1' type='date' />
+										<Form.Control className='w-100 mb-1' type='date' />
+									</Form.Group>
+								</Col>
+								<Col style={{ paddingLeft: "2px" }} sm={6} xs={12}>
+									<Form.Group className='' controlId='formGroupEmail'>
+										<Form.Label
+											style={{ fontSize: "11px", fontWeight: "bolder" }}>
+											TO
+										</Form.Label>
 
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='date'
-													placeholder='QUAL'
-												/>
-											</Form.Group>
-										</Col>
-									</Row>
-								</Form.Group>
-							</Col>
-							<Col sm={2} xs={12}>
-								<Form.Group className='' controlId='formGroupEmail'>
-									<Form.Label>B.</Form.Label>
-									<Row>
-										<Col
-											style={{ paddingLeft: "2px", paddingRight: "2px" }}
-											sm={12}
-											xs={12}>
-											<Form.Group className='' controlId='formGroupEmail'>
-												<Form.Label>ferwer</Form.Label>
-
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-											</Form.Group>
-										</Col>
-									</Row>
-								</Form.Group>
-							</Col>
-							<Col sm={2} xs={12}>
-								<Form.Group className='' controlId='formGroupEmail'>
-									<Form.Label>B.</Form.Label>
-									<Row>
-										<Col
-											style={{ paddingLeft: "2px", paddingRight: "2px" }}
-											sm={12}
-											xs={12}>
-											<Form.Group className='' controlId='formGroupEmail'>
-												<Form.Label>ferwer</Form.Label>
-
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-											</Form.Group>
-										</Col>
-									</Row>
-								</Form.Group>
-							</Col>
-						</Row>
+										<Form.Control className='w-100 mb-1' type='date' />
+										<Form.Control className='w-100 mb-1' type='date' />
+										<Form.Control className='w-100 mb-1' type='date' />
+										<Form.Control className='w-100 mb-1' type='date' />
+										<Form.Control className='w-100 mb-1' type='date' />
+										<Form.Control className='w-100 mb-1' type='date' />
+									</Form.Group>
+								</Col>
+							</Row>
+						</Form.Group>
 					</Col>
-					<Col sm={6} xs={12}>
-						<Row>
-							<Col sm={3} xs={12}>
-								<Form.Group className='' controlId='formGroupEmail'>
-									<Form.Label>B.</Form.Label>
-									<Row>
-										<Col
-											style={{ paddingLeft: "2px", paddingRight: "2px" }}
-											sm={12}
-											xs={12}>
-											<Form.Group className='' controlId='formGroupEmail'>
-												<Form.Label>ferwer</Form.Label>
+					<Col sm={2} xs={6}>
+						<Form.Label className='mb-4'>B.</Form.Label>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label style={{ fontSize: "11px", fontWeight: "bolder" }}>
+								PLACE OF SERVICE
+							</Form.Label>
 
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-											</Form.Group>
-										</Col>
-									</Row>
-								</Form.Group>
-							</Col>
-							<Col sm={2} xs={12}>
-								<Form.Group className='' controlId='formGroupEmail'>
-									<Form.Label>B.</Form.Label>
-									<Row>
-										<Col
-											style={{ paddingLeft: "2px", paddingRight: "2px" }}
-											sm={12}
-											xs={12}>
-											<Form.Group className='' controlId='formGroupEmail'>
-												<Form.Label>ferwer</Form.Label>
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+						</Form.Group>
+					</Col>
+					<Col sm={2} xs={6}>
+						<Form.Label className='mb-4'>C.</Form.Label>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label style={{ fontSize: "11px", fontWeight: "bolder" }}>
+								EMG
+							</Form.Label>
 
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-											</Form.Group>
-										</Col>
-									</Row>
-								</Form.Group>
-							</Col>
-							<Col sm={2} xs={12}>
-								<Form.Group className='' controlId='formGroupEmail'>
-									<Form.Label>B.</Form.Label>
-									<Row>
-										<Col
-											style={{ paddingLeft: "2px", paddingRight: "2px" }}
-											sm={12}
-											xs={12}>
-											<Form.Group className='' controlId='formGroupEmail'>
-												<Form.Label>ferwer</Form.Label>
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+						</Form.Group>
+					</Col>
+					<Col sm={3} xs={12}>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label>
+								D. PROCEDURES, SERVICES /SUPPLIES
+								<div className='text-center' style={{ fontSize: "11px" }}>
+									(Explain Unusual Circumstances)
+								</div>
+							</Form.Label>
+							<Row>
+								<Col style={{ paddingRight: "2px" }} sm={6} xs={12}>
+									<Form.Group className='' controlId='formGroupEmail'>
+										<Form.Label
+											style={{ fontSize: "11px", fontWeight: "bolder" }}>
+											CPT/HCPCS
+										</Form.Label>
 
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-											</Form.Group>
-										</Col>
-									</Row>
-								</Form.Group>
-							</Col>
-							<Col sm={2} xs={12}>
-								<Form.Group className='' controlId='formGroupEmail'>
-									<Form.Label>B.</Form.Label>
-									<Row>
-										<Col
-											style={{ paddingLeft: "2px", paddingRight: "2px" }}
-											sm={12}
-											xs={12}>
-											<Form.Group className='' controlId='formGroupEmail'>
-												<Form.Label>ferwer</Form.Label>
+										<Form.Control className='w-100 mb-1' type='text' />
+										<Form.Control className='w-100 mb-1' type='text' />
+										<Form.Control className='w-100 mb-1' type='text' />
+										<Form.Control className='w-100 mb-1' type='text' />
+										<Form.Control className='w-100 mb-1' type='text' />
+										<Form.Control className='w-100 mb-1' type='text' />
+									</Form.Group>
+								</Col>
+								<Col style={{ paddingLeft: "2px" }} sm={6} xs={12}>
+									<Form.Group className='' controlId='formGroupEmail'>
+										<Form.Label
+											style={{ fontSize: "11px", fontWeight: "bolder" }}>
+											MODIFIER
+										</Form.Label>
 
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-											</Form.Group>
-										</Col>
-									</Row>
-								</Form.Group>
-							</Col>
-							<Col sm={3} xs={12}>
-								<Form.Group className='' controlId='formGroupEmail'>
-									<Form.Label>B.</Form.Label>
-									<Row>
-										<Col
-											style={{ paddingLeft: "2px", paddingRight: "2px" }}
-											sm={12}
-											xs={12}>
-											<Form.Group className='' controlId='formGroupEmail'>
-												<Form.Label>ferwer</Form.Label>
+										<Form.Control className='w-100 mb-1' type='text' />
+										<Form.Control className='w-100 mb-1' type='text' />
+										<Form.Control className='w-100 mb-1' type='text' />
+										<Form.Control className='w-100 mb-1' type='text' />
+										<Form.Control className='w-100 mb-1' type='text' />
+										<Form.Control className='w-100 mb-1' type='text' />
+									</Form.Group>
+								</Col>
+							</Row>
+						</Form.Group>
+					</Col>
+					<Col sm={2} xs={6}>
+						<Form.Label className='mb-4'>E.</Form.Label>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label style={{ fontSize: "11px", fontWeight: "bolder" }}>
+								DIAGNOSIS POINTER
+							</Form.Label>
 
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-												<Form.Control
-													className='w-100'
-													type='text'
-													placeholder='QUAL'
-												/>
-											</Form.Group>
-										</Col>
-									</Row>
-								</Form.Group>
-							</Col>
-						</Row>
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+						</Form.Group>
 					</Col>
 				</Row>
 				<hr />
 				<Row>
-					<Col sm={4} xs={12}>
+					<Col sm={3} xs={6}>
+						<Form.Label>F.</Form.Label>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label style={{ fontSize: "11px", fontWeight: "bolder" }}>
+								$ CHARGES
+							</Form.Label>
+
+							<Form.Control className='w-100 mb-1' type='number' />
+							<Form.Control className='w-100 mb-1' type='number' />
+							<Form.Control className='w-100 mb-1' type='number' />
+							<Form.Control className='w-100 mb-1' type='number' />
+							<Form.Control className='w-100 mb-1' type='number' />
+							<Form.Control className='w-100 mb-1' type='number' />
+						</Form.Group>
+					</Col>
+					<Col sm={2} xs={6}>
+						<Form.Label>G.</Form.Label>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label style={{ fontSize: "11px", fontWeight: "bolder" }}>
+								DAYS OR UNITS
+							</Form.Label>
+
+							<Form.Control className='w-100 mb-1' type='number' />
+							<Form.Control className='w-100 mb-1' type='number' />
+							<Form.Control className='w-100 mb-1' type='number' />
+							<Form.Control className='w-100 mb-1' type='number' />
+							<Form.Control className='w-100 mb-1' type='number' />
+							<Form.Control className='w-100 mb-1' type='number' />
+						</Form.Group>
+					</Col>
+					<Col sm={3} xs={6}>
+						<Form.Label>H.</Form.Label>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label style={{ fontSize: "11px", fontWeight: "bolder" }}>
+								EPSDT Family Plan
+							</Form.Label>
+
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+						</Form.Group>
+					</Col>
+					<Col sm={1} xs={6}>
+						<Form.Label>I.</Form.Label>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label style={{ fontSize: "11px", fontWeight: "bolder" }}>
+								ID QUAL
+							</Form.Label>
+
+							<Form.Control
+								className='w-100 mb-2 text-center'
+								type='text'
+								readOnly
+								placeholder='NPI'
+							/>
+							<Form.Control
+								className='w-100 mb-2 text-center'
+								type='text'
+								readOnly
+								placeholder='NPI'
+							/>
+							<Form.Control
+								className='w-100 mb-2 text-center'
+								type='text'
+								readOnly
+								placeholder='NPI'
+							/>
+							<Form.Control
+								className='w-100 mb-2 text-center'
+								type='text'
+								readOnly
+								placeholder='NPI'
+							/>
+							<Form.Control
+								className='w-100 mb-2 text-center'
+								type='text'
+								readOnly
+								placeholder='NPI'
+							/>
+							<Form.Control
+								className='w-100 mb-2 text-center'
+								type='text'
+								readOnly
+								placeholder='NPI'
+							/>
+						</Form.Group>
+					</Col>
+					<Col sm={3} xs={6}>
+						<Form.Label>J.</Form.Label>
+						<Form.Group className='' controlId='formGroupEmail'>
+							<Form.Label style={{ fontSize: "11px", fontWeight: "bolder" }}>
+								RENDERING PROVIDER ID. #
+							</Form.Label>
+
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+							<Form.Control className='w-100 mb-1' type='text' />
+						</Form.Group>
+					</Col>
+				</Row>
+				<hr />
+				<Row>
+					<Col sm={3} xs={12}>
 						<Row>
-							<Col sm={8} xs={12}>
+							<Col sm={9} xs={12}>
 								<Form.Group>
-									<Form.Label>ferwer</Form.Label>
+									<Form.Label className='mb-4'>
+										25. FEDERAL TAX LD. NUM
+									</Form.Label>
 
 									<Form.Control
 										className='w-100'
 										type='text'
-										placeholder='QUAL'
+										placeholder='534534534453'
 									/>
 								</Form.Group>
 							</Col>
 							<Col className='text-center' sm={2} xs={6}>
 								<Form.Group>
-									<Form.Label>ferwer</Form.Label>
+									<Form.Label className='mb-4'>SSN</Form.Label>
 
 									<Form.Group className='mt-2' id='formGridCheckbox'>
 										<Form.Check className='font-italic' type='checkbox' />
 									</Form.Group>
 								</Form.Group>
 							</Col>
-							<Col className='text-center' sm={2} xs={6}>
+							<Col className='text-center' sm={1} xs={6}>
 								<Form.Group>
-									<Form.Label>ferwer</Form.Label>
+									<Form.Label className='mb-4'>EIN</Form.Label>
 
 									<Form.Group className='mt-2' id='formGridCheckbox'>
 										<Form.Check className='font-italic' type='checkbox' />
@@ -1661,11 +1506,13 @@ export const CmsClaimsForm = (props) => {
 							</Col>
 						</Row>
 					</Col>
-					<Col sm={3} xs={12}>
+					<Col sm={4} xs={12}>
 						<Row>
-							<Col sm={8} xs={12}>
+							<Col sm={6} xs={12} style={{ paddingRight: "2px" }}>
 								<Form.Group>
-									<Form.Label>ferwer</Form.Label>
+									<Form.Label className='mb-4'>
+										26. PATIENT ACCOUNT NO.
+									</Form.Label>
 
 									<Form.Control
 										className='w-100'
@@ -1674,11 +1521,11 @@ export const CmsClaimsForm = (props) => {
 									/>
 								</Form.Group>
 							</Col>
-							<Col style={{ paddingRight: "2px" }} sm={4} xs={12}>
+							<Col style={{ paddingRight: "2px" }} sm={6} xs={12}>
 								<Form.Group>
-									<Form.Label>ferwer</Form.Label>
+									<Form.Label>27. ACCEPT ASSIGNMENT?</Form.Label>
 
-									<div className='d-flex flex-row '>
+									<div className='d-flex flex-row  justify-content-between'>
 										<Form.Group className='mt-2' id='formGridCheckbox'>
 											<Form.Check
 												className='font-italic'
@@ -1694,6 +1541,9 @@ export const CmsClaimsForm = (props) => {
 											/>
 										</Form.Group>
 									</div>
+									<span style={{ fontSize: "11px" }}>
+										(For govt, claims, see below)
+									</span>
 								</Form.Group>
 							</Col>
 						</Row>
@@ -1702,20 +1552,25 @@ export const CmsClaimsForm = (props) => {
 						<Row>
 							<Col sm={4} xs={12}>
 								<Form.Group className='' controlId='formGroupEmail'>
-									<Form.Label>10. IS PATIENT’S </Form.Label>
-									<Form.Control type='number' placeholder='123456' />
+									<Form.Label className='mb-4'>28. TOTAL CHARGE </Form.Label>
+									<Form.Control type='number' placeholder='$12,34,56' />
 								</Form.Group>
 							</Col>
 							<Col sm={4} xs={12}>
 								<Form.Group className='' controlId='formGroupEmail'>
-									<Form.Label>10. IS PATIENT’S </Form.Label>
-									<Form.Control type='number' placeholder='123456' />
+									<Form.Label className='mb-4'>29. AMOUNT PAID </Form.Label>
+									<Form.Control type='number' placeholder='$12,34,56' />
 								</Form.Group>
 							</Col>
 							<Col sm={4} xs={12}>
 								<Form.Group className='' controlId='formGroupEmail'>
-									<Form.Label>10. IS PATIENT’S </Form.Label>
-									<Form.Control type='number' placeholder='123456' />
+									<Form.Label className='mb-4'>
+										30. Rsvd for
+										<span style={{ fontSize: "12px", marginLeft: "2px" }}>
+											NUCC Use
+										</span>
+									</Form.Label>
+									<Form.Control type='text' />
 								</Form.Group>
 							</Col>
 						</Row>
@@ -1725,7 +1580,20 @@ export const CmsClaimsForm = (props) => {
 				<Row>
 					<Col sm={4} xs={12}>
 						<Form.Group>
-							<Form.Label>ferwer</Form.Label>
+							<Form.Label>
+								31. SIGNATURE OF PHYSICIAN OR SUPPLIER INCLUDING DEGREES OR
+								CREDENTIALS. <br />
+								<br />
+								<span style={{ fontSize: "13px", marginLeft: "2px" }}>
+									(I certify that the statements on the reverse apply to this
+									bill and are made a part thereof.)
+								</span>
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+							</Form.Label>
 
 							<Row>
 								<Col sm={6} xs={12}>
@@ -1759,8 +1627,12 @@ export const CmsClaimsForm = (props) => {
 					</Col>
 					<Col sm={4} xs={12}>
 						<Form.Group>
-							<Form.Label>ferwer</Form.Label>
-							<Form.Control as='textarea' rows={7} placeholder='123456' />
+							<Form.Label>32. SERVICE FACILITY LOCATION INFORMATION</Form.Label>
+							<Form.Control
+								as='textarea'
+								rows={7}
+								placeholder='I certify that the statements on the reverse apply to this bill and are made a part thereof.'
+							/>
 
 							<Row className='mt-2'>
 								<Col sm={6} xs={12}>
@@ -1794,7 +1666,7 @@ export const CmsClaimsForm = (props) => {
 					</Col>
 					<Col sm={4} xs={12}>
 						<Form.Group>
-							<Form.Label>ferwer</Form.Label>
+							<Form.Label>33. BILLING PROVIDER INFO & PH #</Form.Label>
 							<Form.Control className='mb-2' type='text' placeholder='phone#' />
 							<Form.Control as='textarea' rows={5} placeholder='123456' />
 
@@ -1829,6 +1701,7 @@ export const CmsClaimsForm = (props) => {
 						</Form.Group>
 					</Col>
 				</Row>
+				<hr />
 			</div>
 		</Container>
 	);

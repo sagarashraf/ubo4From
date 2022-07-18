@@ -19,7 +19,6 @@
 .form-control:disabled,
 .form-control[readonly] {
 	padding-right: 0px;
-	background-color: #9bee6c !important;
 	color: white !important;
 	padding-left: 0px;
 	height: 100%;
