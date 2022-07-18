@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col, Card, Table, Form } from "react-bootstrap";
 import { DAYLIST, MONTHLIST, YEARLIST } from "../constant/AppConstants";
 import "./CmsClaimsForm.css";
+import { CmsDisclaimer } from "./cmsdisclaimer/CmsDisclaimer";
 
 /**
  * @author
@@ -1702,6 +1703,7 @@ export const CmsClaimsForm = (props) => {
 					</Col>
 				</Row>
 				<hr />
+				<CmsDisclaimer />
 			</div>
 		</Container>
 	);
